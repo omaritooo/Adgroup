@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2046" height="976.517" viewBox="0 0 2046 976.517">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00bdd6"/>
+      <stop offset="0.04" stop-color="#00bdd6"/>
+      <stop offset="1" stop-color="#dde790"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_797" data-name="Group 797" transform="translate(61 -163)">
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="69" cy="69" r="69" transform="translate(-61 893)" opacity="0.28" fill="url(#linear-gradient)"/>
+    <g id="Group_162" data-name="Group 162" transform="translate(1525.588 302.736)" opacity="0.38">
+      <circle id="Ellipse_23" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-2" data-name="Ellipse 23" cx="3.371" cy="2.408" rx="3.371" ry="2.408" transform="translate(17.338 0)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-3" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(35.639 0)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-4" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(52.977 0)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-5" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(70.315 0)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-6" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(87.653 0)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-7" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(0 17.338)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-8" data-name="Ellipse 23" cx="3.371" cy="2.89" rx="3.371" ry="2.89" transform="translate(17.338 17.338)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-9" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(35.639 17.338)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-10" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(52.977 17.338)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-11" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(70.315 17.338)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-12" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(87.653 17.338)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-13" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(0 34.676)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-14" data-name="Ellipse 23" cx="3.371" cy="2.408" rx="3.371" ry="2.408" transform="translate(17.338 34.676)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-15" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(35.639 34.676)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-16" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(52.977 34.676)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-17" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(70.315 34.676)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-18" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(87.653 34.676)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-19" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(0 52.977)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-20" data-name="Ellipse 23" cx="3.371" cy="2.408" rx="3.371" ry="2.408" transform="translate(17.338 52.977)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-21" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(35.639 52.977)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-22" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(52.977 52.977)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-23" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(70.315 52.977)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-24" data-name="Ellipse 23" cx="2.408" cy="2.408" r="2.408" transform="translate(87.653 52.977)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-25" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(0 69.352)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-26" data-name="Ellipse 23" cx="3.371" cy="2.89" rx="3.371" ry="2.89" transform="translate(17.338 69.352)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-27" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(35.639 69.352)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-28" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(52.977 69.352)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-29" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(70.315 69.352)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-30" data-name="Ellipse 23" cx="2.408" cy="2.89" rx="2.408" ry="2.89" transform="translate(87.653 69.352)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_160" data-name="Group 160" transform="translate(2186.859 -524)" opacity="0.38">
+      <circle id="Ellipse_23-31" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 915)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-32" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-33" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-34" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-35" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-36" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-37" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 940)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-38" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-39" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-40" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-41" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-42" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-43" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 964)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-44" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-45" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-46" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-47" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-48" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-49" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 989)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-50" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-51" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-52" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-53" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-54" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 989)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-55" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2224.859 1013)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-56" data-name="Ellipse 23" cx="4" cy="4" r="4" transform="translate(-2200.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-57" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2175.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-58" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2150.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-59" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2126.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-60" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2101.859 1013)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_161" data-name="Group 161" transform="translate(4079.859 31)" opacity="0.38">
+      <circle id="Ellipse_23-61" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 915)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-62" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-63" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-64" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-65" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-66" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-67" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 940)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-68" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-69" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-70" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-71" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-72" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-73" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 964)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-74" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-75" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-76" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-77" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-78" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-79" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 989)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-80" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-81" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-82" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-83" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-84" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 989)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-85" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2224.859 1013)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-86" data-name="Ellipse 23" cx="4" cy="4" r="4" transform="translate(-2200.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-87" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2175.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-88" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2150.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-89" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2126.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-90" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2101.859 1013)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_163" data-name="Group 163" transform="translate(2659.859 -752)" opacity="0.38">
+      <circle id="Ellipse_23-91" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 915)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-92" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-93" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-94" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-95" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-96" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 915)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-97" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 940)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-98" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-99" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-100" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-101" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-102" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 940)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-103" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 964)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-104" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-105" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-106" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-107" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-108" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 964)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-109" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2224.859 989)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-110" data-name="Ellipse 23" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-2200.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-111" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2175.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-112" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2150.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-113" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2126.859 989)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-114" data-name="Ellipse 23" cx="3.5" cy="3.5" r="3.5" transform="translate(-2101.859 989)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-115" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2224.859 1013)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_23-116" data-name="Ellipse 23" cx="4" cy="4" r="4" transform="translate(-2200.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-117" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2175.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-118" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2150.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-119" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2126.859 1013)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_23-120" data-name="Ellipse 23" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-2101.859 1013)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(1451 1132.294) rotate(-87)" fill="none" stroke="#3a6bab" stroke-width="8" stroke-dasharray="214" opacity="0.2">
+      <circle cx="69" cy="69" r="69" stroke="none"/>
+      <circle cx="69" cy="69" r="65" fill="none"/>
+    </g>
+  </g>
+</svg>

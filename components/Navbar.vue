@@ -1,10 +1,10 @@
 <template>
-    <div class="px-4 py-4 text-white md:px-10 bckg">
-        <nav class="relative flex flex-wrap items-center justify-between px-2 bg-blueGray-500">
-            <div class="container flex flex-wrap items-center justify-between px-4 ">
-                <div class="relative flex justify-between w-full px-4 lg:w-auto lg:static lg:block lg:justify-start">
-                    <a class="inline-block py-1 mr-4 text-sm font-bold leading-relaxed text-white uppercase whitespace-nowrap" href="#pablo">
-                        <!-- <img class="w-16 h-16 md:w-32 md:h-32" src="../assets/logo.svg" alt="" > -->
+    <div class="py-4 text-white bckg">
+        <nav class="relative flex flex-wrap items-center px-20 justify-evenly bg-blueGray-500">
+            <div class="container flex flex-wrap items-center px-20 justify-evenly ">
+                <div class="relative flex w-full px-4 justify-evenly lg:w-auto lg:static lg:block lg:justify-start">
+                    <a class="inline-block mr-4 text-sm font-bold leading-relaxed text-white uppercase whitespace-nowrap">
+                        <img class="w-16 h-16 my-auto md:w-32 md:h-20" src="../static/ad-logo.svg" alt="" >
                     </a>
                     <button class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none" type="button">
                         
@@ -19,18 +19,18 @@
                     <!-- <font-awesome-icon  :icon="['fab', 'facebook']" size="lg" class="text-white transition duration-500 ease-in-out transform text-md hover:-translate-y-1 hover:shadow-xl"/> -->
                     </button>
                 </div>
-                <div :class="{'hidden': !showMenu, 'flex': showMenu}" class="items-center lg:flex lg:flex-grow">
+                <div :class="{'hidden': !showMenu, 'flex': showMenu}" class="items-center md:items-start lg:flex lg:flex-grow">
                     <transition enter-active-class="transition duration-100 ease-out" enter-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100" leave-active-class="transition duration-75 ease-in" leave-class="transform scale-100 opacity-100"
                         leave-to-class="transform scale-95 opacity-0">
                         <ul class="flex flex-col ml-auto list-none gap-y-4 gap-x-7 md:justify-end lg:flex-row ">
                            <li class="nav-item">
-                                <nuxt-link to="" href="#"><button class="active px-2 uppercase py-1 mt-2 text-md  hover-underline-animation">Home</button></nuxt-link>
+                                <nuxt-link to="" href="#"><button ref="home" class="px-2 py-1 mt-2 text-gray-300 uppercase active text-md hover:text-white hover-underline-animation">Home</button></nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <nuxt-link to="" href="#"><button class="active px-2 uppercase py-1 mt-2 text-md  hover-underline-animation">About Us</button></nuxt-link>
+                                <nuxt-link to="" href="#"><button class="px-2 py-1 mt-2 text-gray-300 uppercase active text-md hover:text-white hover-underline-animation">About Us</button></nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <nuxt-link to="" href="#"><button class="active px-2 uppercase py-1 mt-2 text-md  hover-underline-animation">Contact Us</button></nuxt-link>
+                                <nuxt-link to="" href="#"><button class="px-2 py-1 mt-2 text-gray-300 uppercase active text-md hover:text-white hover-underline-animation">Contact Us</button></nuxt-link>
                             </li>
                         </ul>
                     </transition>
@@ -104,6 +104,7 @@
     .hover-underline-animation:focus:after{
         text-decoration: underline;
                 background-color: #4CD392;
+                
 
     }
     .test {

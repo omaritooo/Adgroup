@@ -67,6 +67,9 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      104: '28rem',
+      108: '32rem',
+      112: '36rem',
     },
     animation: {
       none: 'none',
@@ -285,6 +288,7 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
+      '2r' : ['2rem', {lineHeight: '1'}]
     },
     fontWeight: {
       thin: '100',
@@ -971,5 +975,6 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [require('tailwindcss-debug-screens'),       require('daisyui'),
+],
 }

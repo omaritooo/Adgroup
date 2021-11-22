@@ -19,7 +19,8 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: [ { src: './plugins/particles.js', mode: 'client' },
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -31,6 +32,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -39,8 +41,25 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/fontawesome'
   ],
-
+  fontawesome: {
+    icons: {
+      regular:['faEnvelope'],
+      brands: [
+        "faFacebook",
+        "faFacebookF",
+        "faFacebookMessenger",
+        "faInstagram",
+        "faTwitter",
+        "faWhatsapp",
+        "faPinterest",
+        "faTelegramPlane",
+        "faLinkedin"
+      ],
+      solid: ['faArrowRight', 'faTimes', 'faExpandArrowsAlt', 'faCompress', 'faLink', 'faQuoteLeft', 'faPhoneAlt']
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -50,8 +69,28 @@ export default {
       lang: 'en'
     }
   },
-
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop + window.innerHeight,
+          behavior: 'smooth'
+        })
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      },
+    },
+    transpile: ['particles.vue']
+
   }
 }
