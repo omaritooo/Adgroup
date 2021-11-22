@@ -38,9 +38,9 @@
             }
         },
         mounted()
-        {   const count = 5;
+        {   
 
-            console.log(count)
+            
         },
         methods: 
         {
@@ -81,8 +81,7 @@
 	height:auto;
 }
 
-.wrapper iframe {
-}
+
 
 .play-btn {
 	position:absolute;
