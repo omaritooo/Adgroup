@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img width="1920" src="../static/rect.svg" alt="">
+        <img width="1920" src="/rect.svg" alt="">
         <div class="flex justify-around px-32 py-6 bg-black">
             <div class="flex flex-col justify-start py-4 bg-black gap-y-2 ">
                 <h1 class="py-4 text-4xl font-bold text-left text-white ">Contact Us</h1>

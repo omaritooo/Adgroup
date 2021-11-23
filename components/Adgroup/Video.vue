@@ -3,7 +3,7 @@
         
 <div class="z-10 flex px-32 my-32 justify-evenly gap-x-5 ">
     <div class="wrapper">
-        <img ref="img" :class="{'': !toggle, 'hidden' : toggle}" src="../static/test.png" alt="">
+        <img ref="img" :class="{'': !toggle, 'hidden' : toggle}" src="/test.png" alt="">
        <iframe id="player" ref="iframe" class="rounded-lg" loading="lazy" :class="{'': toggle, 'hidden' : !toggle}" width="560" height="315" src="https://www.youtube.com/embed/d7lCZ0rpH3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
        <button id="play" ref="play" :class="{'': !toggle, 'hidden' : toggle}" class="play-btn" @click="activator">
     <svg xmlns="http://www.w3.org/2000/svg" width="83.829" height="83.829" viewBox="0 0 83.829 83.829">

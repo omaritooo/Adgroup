@@ -4,7 +4,7 @@
             <div class="container flex flex-wrap items-center px-20 justify-evenly ">
                 <div class="relative flex w-full px-4 justify-evenly lg:w-auto lg:static lg:block lg:justify-start">
                     <a class="inline-block mr-4 text-sm font-bold leading-relaxed text-white uppercase whitespace-nowrap">
-                        <img class="w-16 h-16 my-auto md:w-32 md:h-20" src="../static/ad-logo.svg" alt="" >
+                        <img class="w-16 h-16 my-auto md:w-32 md:h-20" src="/ad-logo.svg" alt="" >
                     </a>
                     <button class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none" type="button">
                         
