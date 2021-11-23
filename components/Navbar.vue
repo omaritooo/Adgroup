@@ -1,5 +1,5 @@
 <template>
-    <div class="py-4 text-white bckg">
+    <div class="block py-4 text-white md:hidden bckg">
         <nav class="relative flex flex-wrap items-center px-20 justify-evenly bg-blueGray-500">
             <div class="container flex flex-wrap items-center px-20 justify-evenly ">
                 <div class="relative flex w-full px-4 justify-evenly lg:w-auto lg:static lg:block lg:justify-start">
@@ -16,7 +16,6 @@
                                 <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': showMenu, ' translate-y-1.5': !showMenu}"></span>
                             </div>
                         </button>
-                    <!-- <font-awesome-icon  :icon="['fab', 'facebook']" size="lg" class="text-white transition duration-500 ease-in-out transform text-md hover:-translate-y-1 hover:shadow-xl"/> -->
                     </button>
                 </div>
                 <div :class="{'hidden': !showMenu, 'flex': showMenu}" class="items-center md:items-start lg:flex lg:flex-grow">
