@@ -19,7 +19,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
+      site: {
+        gold: '#FCB11F',
+        babyblue: '#547DBF'
+      },
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,

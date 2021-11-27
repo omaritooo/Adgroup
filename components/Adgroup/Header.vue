@@ -22,7 +22,7 @@
 		<div class="w-56 h-56 logo">
 			<img src="/ad-logo.svg" alt="">
 		</div>
-        <a class="rule-cont">
+        <nuxt-link to="/vivildy" class="rule-cont">
                 <div class="gradient">
 
                 </div>
@@ -33,7 +33,7 @@
 				<div class="text-4xl text-white text">
 					Vivildy
 				</div>
-        </a>
+        </nuxt-link>
         <div class="rule-cont">
                 <div class="gradient">
 

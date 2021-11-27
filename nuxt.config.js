@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  
   head: {
     title: 'adgroup',
     meta: [
@@ -20,6 +21,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [ { src: './plugins/particles.js', mode: 'client' },
+  { src: './plugins/carousel.js', mode: 'client' }
 
   ],
 
@@ -51,13 +53,15 @@ export default {
         "faFacebookF",
         "faFacebookMessenger",
         "faInstagram",
+        "faSnapchat",
         "faTwitter",
         "faWhatsapp",
         "faPinterest",
         "faTelegramPlane",
-        "faLinkedin"
+        "faLinkedin",
+       
       ],
-      solid: ['faArrowRight', 'faTimes', 'faExpandArrowsAlt', 'faCompress', 'faLink', 'faQuoteLeft', 'faPhoneAlt']
+      solid: ['faArrowRight', 'faTimes', 'faExpandArrowsAlt', 'faCompress', 'faLink', 'faQuoteLeft', 'faPhoneAlt', 'faMapMarkerAlt', 'faEnvelope']
     }
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
