@@ -1,18 +1,21 @@
 <template>
-  <div class="flex flex-col w-1/4 bg-white rounded-t-lg shadow-lg">
-      <img class="object-contain rounded-t-lg" src="https://media.gettyimages.com/photos/thierry-henry-celebrates-scoring-arsenals-2nd-goal-during-the-premier-picture-id1214933324?s=612x612">
-      <div class="p-2 text-center text-black">
-          Test Image
-      </div>
+  <div
+    class="flex flex-col bg-white rounded-t-lg shadow-lg"
+    @click="$router.push(`/showcase/${dum.id}`)"
+  >
+    <img class="object-contain rounded-t-lg" :src="dum.url" />
+    <div class="w-full px-6 py-4 text-center text-black text-wrap">
+      {{ dum.title }}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  props: {
+    dum: Object,
+  },
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

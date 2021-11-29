@@ -13,13 +13,11 @@
                 <a class="tab tab-bordered focus:tab-active ">Koboi</a>
                 <a class="tab tab-bordered hover:tab-active">Sansevierrie</a>
             </div>
-            <div class="flex flex-wrap justify-center mt-6 gap-x-3 gap-y-3">
-                <Card class="w-1/4" />
-                <Card class="w-1/4" />
-                <Card class="w-1/4" />
-                <Card class="w-1/4" />
-                <Card class="w-1/4" />
-                <Card class="w-1/4" />
+            <div class="flex flex-wrap justify-around mt-6 gap-y-3">
+                <div v-for="te in da" :key="te.index" class="w-1/3">
+                    <Card :dum="te" class="w-1/3" />
+                </div>
+               
             </div>
             <div class="mt-10 text-center">
                 <button class="px-4 text-white bg-transparent border-2 border-white rounded-lg">Show More </button>
@@ -29,10 +27,30 @@
 </template>
 
 <script>
-    import Card from "../Adgroup/Card.vue"
+     import axios from 'axios';
+    import Card from "../Adgroup/Card.vue";
     export default {
         components: {
             Card,
+        },
+        data(){
+            return{
+                test: []
+            }
+        },
+        computed:{
+            data()
+            {
+                return this.$store.state.port
+            },
+            da()
+            {
+                return this.test.slice(0,6)
+            }
+        },
+        mounted()     {
+            this.$store.commit('getDummy')
+             axios.get('https://jsonplaceholder.typicode.com/photos').then(res => {this.test = res.data})
         }
     }
 </script>

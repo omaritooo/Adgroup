@@ -1,5 +1,5 @@
 <template>
-    <div class="block py-4 text-white md:hidden bckg">
+    <div class="block py-4 text-white  bckg">
         <nav class="relative flex flex-wrap items-center px-20 justify-evenly bg-blueGray-500">
             <div class="container flex flex-wrap items-center px-20 justify-evenly ">
                 <div class="relative flex w-full px-4 justify-evenly lg:w-auto lg:static lg:block lg:justify-start">

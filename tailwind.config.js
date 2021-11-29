@@ -21,7 +21,8 @@ module.exports = {
       current: 'currentColor',
       site: {
         gold: '#FCB11F',
-        babyblue: '#547DBF'
+        babyblue: '#547DBF',
+        vblue: '#5B77AC'
       },
       black: colors.black,
       white: colors.white,

@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-hidden">
-    <Navbar/>
+    <Navbar class="md:hidden"/>
     <Header/>
     <Video/>
     <Portfolio/>
