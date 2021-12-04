@@ -10,7 +10,7 @@
     <div>
       <img width="1920" src="/rect.svg" alt="" />
       <div
-        class="flex px-20 pt-20 text-justify justify-evenly bg-site-babyblue"
+        class="flex flex-col px-10 pt-20 text-justify  sm:px-6 xl:px-20 md:flex-row justify-evenly bg-site-babyblue"
       >
         <div class="flex flex-col text-lg text-site-gold">
           <img class="w-32 h-32 mb-6" src="/vivlog.svg" />

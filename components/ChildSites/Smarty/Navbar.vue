@@ -12,7 +12,7 @@
           >
             <img
               class="w-16 h-16 my-auto md:w-32 md:h-20"
-              :src="imgsrc"
+              src="/smartly - logo copy.svg"
               alt=""
             />
           </a>
@@ -102,7 +102,7 @@
                 <nuxt-link to="" href="#"
                   ><button
                     ref="home"
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >
                     Home
                   </button></nuxt-link
@@ -111,36 +111,36 @@
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >
-                    About Us
+                    About
                   </button></nuxt-link
                 >
               </li>
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >
-                    Services
+                    Courses
                   </button></nuxt-link
                 >
               </li>
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >
-                    Partners
+                    Contact
                   </button></nuxt-link
                 >
               </li>
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="px-4 py-2 text-base text-gray-100 uppercase rounded-lg  bg-site-babyblue active hover:text-white"
                   >
-                    Contact Us
+                    Sign Up
                   </button></nuxt-link
                 >
               </li>

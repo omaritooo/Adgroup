@@ -1,10 +1,10 @@
 <template>
   <div class="overflow-x-hidden">
-    <Navbar class="md:hidden"/>
-    <Header/>
-    <Video/>
-    <Portfolio/>
-    <Footer/>
+    <Navbar class="md:hidden" />
+    <Header class="hidden md:block" />
+    <Video />
+    <Portfolio />
+    <Footer />
   </div>
 </template>
 
@@ -16,19 +16,17 @@ import Footer from '../components/Adgroup/Footer.vue'
 import Navbar from '../components/Adgroup/Navbar.vue'
 
 export default {
-  components:
-  {
+  components: {
     Header,
     Video,
     Portfolio,
     Footer,
-    Navbar
-  }
+    Navbar,
+  },
 }
 </script>
 <style>
-html{
-          font-family: 'Poppins', sans-serif;
-
+html {
+  font-family: 'Poppins', sans-serif;
 }
 </style>

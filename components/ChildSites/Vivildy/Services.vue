@@ -4,16 +4,16 @@
         Services
       </h1>
        <client-only>
-                 <div class="w-1/3 mx-auto ">
+                 <div class="w-1/2 mx-auto 2xl:w-1/3 ">
               <carousel scroll-per-page="false" pagination-enabled="false" center-mode="true" autoplay="true" per-page="2" autoplay-hover-pause="true" pagination-size="0" loop="true">
                  <slide>
-    <div class="w-1/3 test"><span class="flex-wrap my-auto text-xl">Interactive Table</span></div>
+    <div class="2xl:w-1/3 test"><span class="flex-wrap my-auto text-xl">Interactive Table</span></div>
   </slide>
    <slide>
-    <div class="w-1/3 test"><span class="flex-wrap my-auto text-xl">Mobile Application</span></div>
+    <div class="2xl:w-1/3 test"><span class="flex-wrap my-auto text-xl">Mobile Application</span></div>
   </slide>
            <slide>
-    <div class="w-1/3 test"><span class="flex-wrap my-auto text-xl">Virtual Book</span></div>
+    <div class="w-full 2xl:w-1/3 test"><span class="flex-wrap my-auto text-xl">Virtual Book</span></div>
   </slide>
   
                   
@@ -51,8 +51,8 @@ export default {
     width: 25vw;
    border-radius: 50%;
     line-height: 50vh;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
     background: 
     linear-gradient(
       rgba(84, 125, 191, 0.6), 

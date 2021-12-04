@@ -29,7 +29,7 @@ export default {
 .head {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 .header {
@@ -37,7 +37,7 @@ export default {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background: linear-gradient(
       0deg,
@@ -57,7 +57,7 @@ export default {
 .arrow {
   position: absolute;
   top: 80%;
-  left: 45%;
+  left: 47%;
   width: 90%;
 }
 </style>
