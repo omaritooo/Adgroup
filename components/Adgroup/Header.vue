@@ -1,24 +1,40 @@
 <template>
-  <div class="ruler">
-    <div class="w-56 h-56 logo">
-      <img src="/ad-logo.svg" alt="" />
+  <div>
+    <div class="hidden lg:block">
+      <div class="hidden ruler lg:block">
+        <div class="w-56 h-56 logo">
+          <img src="/ad-logo.svg" alt="" />
+        </div>
+        <nuxt-link to="/vivildy" class="rule-cont">
+          <div class="gradient"></div>
+          <div class="rule1"></div>
+          <div class="text-4xl text-white text">Vivildy</div>
+        </nuxt-link>
+        <nuxt-link to="/vreal" class="rule-cont">
+          <div class="gradient"></div>
+          <div class="rule1"></div>
+          <div class="text-4xl text-white text">Vreal</div>
+        </nuxt-link>
+        <nuxt-link to="/smarty" class="rule-cont">
+          <div class="gradient"></div>
+          <div class="rule1"></div>
+          <div class="text-4xl text-white shadow-lg text">Smart</div>
+        </nuxt-link>
+      </div>
     </div>
-    <nuxt-link to="/vivildy" class="rule-cont">
-      <div class="gradient"></div>
-      <div class="rule1"></div>
-
-      <div class="text-4xl text-white text">Vivildy</div>
-    </nuxt-link>
-    <nuxt-link to="/vreal" class="rule-cont">
-      <div class="gradient"></div>
-      <div class="rule1"></div>
-      <div class="text-4xl text-white text">Vreal</div>
-    </nuxt-link>
-    <nuxt-link to="/smarty" class="rule-cont">
-      <div class="gradient"></div>
-      <div class="rule1"></div>
-      <div class="text-4xl text-white shadow-lg text">Smart</div>
-    </nuxt-link>
+    <div class="block px-10 py-20 bg-black lg:hidden">
+      <div class="flex justify-around">
+        <nuxt-link to="/vreal" class="w-max">
+          <img src="/vreal.svg" class="w-20 h-20" alt="" />
+        </nuxt-link>
+        <nuxt-link to="/vivildy" class="">
+          <img src="/viv_logo.svg" class="w-20 h-20" alt="" />
+        </nuxt-link>
+        <nuxt-link to="/smarty" class="">
+          <img src="/smartly - logo copy.svg" class="w-20 h-20" alt="" />
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -103,7 +119,7 @@ export default {}
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  background: url('https://media.gettyimages.com/photos/thierry-henry-celebrates-scoring-arsenals-2nd-goal-during-the-premier-picture-id1214933324?s=612x612');
+  background: url('https://i.imgur.com/3waGp61.png');
 }
 .rule-cont:hover .rule1 {
   position: absolute;

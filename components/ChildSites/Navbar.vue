@@ -1,17 +1,15 @@
 <template>
-  <div class="block text-white bg-black bg-opacity-70 bckg">
+  <div class="block py-4 text-white bg-black bckg bg-opacity-40">
     <nav
-      class="relative flex flex-wrap items-center px-20  justify-evenly bg-blueGray-500"
+      class="relative flex flex-wrap items-center px-10  justify-evenly bg-blueGray-500"
     >
-      <div class="container flex flex-wrap items-center px-20 justify-evenly">
+      <div class="container flex flex-wrap items-center justify-evenly">
         <div
-          class="relative flex w-full px-4  justify-evenly lg:w-auto lg:static lg:block lg:justify-start"
+          class="relative flex justify-between w-full px-4  lg:w-auto lg:static lg:block lg:justify-start"
         >
-          <a
-            class="inline-block mr-4 text-sm font-bold leading-relaxed text-white uppercase  whitespace-nowrap"
-          >
+          <a class="inline-block mr-4 font-bold text-white uppercase">
             <img
-              class="w-16 h-16 my-auto md:w-32 md:h-20"
+              class="w-20 h-20 my-auto md:w-32 md:h-20"
               :src="imgsrc"
               alt=""
             />
@@ -85,7 +83,7 @@
         </div>
         <div
           :class="{ hidden: !showMenu, flex: showMenu }"
-          class="items-center md:items-start lg:flex lg:flex-grow"
+          class="mr-auto md:items-start lg:items-end lg:flex lg:flex-grow"
         >
           <transition
             enter-active-class="transition duration-100 ease-out"
@@ -96,13 +94,13 @@
             leave-to-class="transform scale-95 opacity-0"
           >
             <ul
-              class="flex flex-col ml-auto list-none opacity-100  gap-y-4 gap-x-7 md:justify-end lg:flex-row"
+              class="flex flex-col justify-end mr-auto list-none  md:gap-y-4 md:gap-x-7 lg:flex-row"
             >
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
                     ref="home"
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="w-full mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
                     Home
                   </button></nuxt-link
@@ -111,7 +109,7 @@
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
                     About Us
                   </button></nuxt-link
@@ -120,25 +118,7 @@
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
-                  >
-                    Services
-                  </button></nuxt-link
-                >
-              </li>
-              <li class="nav-item">
-                <nuxt-link to="" href="#"
-                  ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
-                  >
-                    Partners
-                  </button></nuxt-link
-                >
-              </li>
-              <li class="nav-item">
-                <nuxt-link to="" href="#"
-                  ><button
-                    class="px-2 text-base text-gray-400 uppercase  active hover:text-white"
+                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
                     Contact Us
                   </button></nuxt-link

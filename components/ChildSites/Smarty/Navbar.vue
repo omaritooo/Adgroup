@@ -96,7 +96,7 @@
             leave-to-class="transform scale-95 opacity-0"
           >
             <ul
-              class="flex flex-col ml-auto list-none opacity-100  gap-y-4 gap-x-7 md:justify-end lg:flex-row"
+              class="flex flex-col ml-auto list-none opacity-100  lg:ml-0 gap-y-4 gap-x-7 md:justify-end lg:flex-row"
             >
               <li class="nav-item">
                 <nuxt-link to="" href="#"

@@ -10,9 +10,11 @@
     <div>
       <img width="1920" src="/rect.svg" alt="" />
       <div
-        class="flex flex-col px-10 pt-20 text-justify  sm:px-6 xl:px-20 md:flex-row justify-evenly bg-site-babyblue"
+        class="flex flex-col justify-around px-4 pt-20 text-justify  sm:px-6 2xl:px-20 md:flex-row lg:justify-evenly bg-site-babyblue"
       >
-        <div class="flex flex-col text-lg text-site-gold">
+        <div
+          class="flex flex-col order-last mr-10 text-lg  md:order-first text-site-gold"
+        >
           <img class="w-32 h-32 mb-6" src="/vivlog.svg" />
           <div class="flex flex-col py-6 gap-y-3">
             <a class="flex">
@@ -62,7 +64,7 @@
             <span>(Ad Group Co.) All Rights Reserved.</span>
           </div>
         </div>
-        <div>
+        <div class="mb-4 md:mb-0">
           <form class="flex flex-col text-site-gold gap-y-3">
             <input
               type="text"

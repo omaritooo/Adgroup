@@ -1,6 +1,6 @@
 <template>
   <div class="bg-blue-900">
-    <div class="pt-20 px-96">
+    <div class="pt-20 lg:px-96">
       <img class="h-20 w-62" src="/smartly - logo copy.svg" alt="" />
       <div class="flex flex-col py-6 gap-y-5">
         <a class="flex">
@@ -24,7 +24,7 @@
         </a>
       </div>
     </div>
-    <div class="flex text-black px-96">
+    <div class="flex text-black lg:px-96">
       <div class="container flex justify-between w-full px-4 py-4 bg-site-gold">
         <div>Copyright © 2021 Tung Chi Vo</div>
         <div class="flex gap-x-4">

@@ -40,7 +40,7 @@
       </div>
       <div>
         <img
-          src="ad-logo.svg"
+          src="/ad-logo.svg"
           class="h-20 align-middle md:h-40 md:p-4 md:my-auto"
           alt=""
         />

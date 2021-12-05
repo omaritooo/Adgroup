@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-x-hidden">
-    <Navbar class="md:hidden" />
-    <Header class="hidden md:block" />
+    <Navbar class="block lg:hidden" />
+    <Header class="md:block" />
     <Video />
     <Portfolio />
     <Footer />

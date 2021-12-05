@@ -10,7 +10,7 @@
     <div class="">
       <img width="1920" src="/rect.svg" alt="" />
       <div
-        class="flex px-20 pt-20 pb-4 text-justify justify-evenly bg-site-vblue"
+        class="flex flex-col px-8 py-10 pb-4 text-justify  lg:flex-row lg:px-20 lg:pt-20 justify-evenly bg-site-vblue"
       >
         <div class="flex flex-col text-lg text-white">
           <img class="w-32 h-32 mb-6" src="/vrlogo.svg" />
@@ -62,7 +62,7 @@
             <span>(Ad Group Co.) All Rights Reserved.</span>
           </div>
         </div>
-        <div class="w-1/3">
+        <div class="order-first w-full mb-6 lg:mb-0 lg:w-1/3 lg:order-last">
           <form class="flex flex-col text-white gap-y-3">
             <input
               type="text"

@@ -2,7 +2,7 @@
   <div class="head">
     <div class="header">
       <div
-        class="flex flex-col mx-auto text-5xl font-bold text-left gap-y-2 text"
+        class="flex flex-col mx-auto font-bold text-left  md:text-xl lg:text-5xl gap-y-2 text"
       >
         Fully Integrated Media and Production Agency
         <span class="text-2xl font-thin"> Know More </span>
@@ -29,7 +29,7 @@ export default {
 .head {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 .header {
@@ -37,7 +37,7 @@ export default {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background: linear-gradient(
       0deg,
@@ -45,7 +45,7 @@ export default {
       rgba(0, 0, 0, 0.5) 48%,
       rgba(0, 0, 0, 0.253) 100%
     ),
-    url('/vrheader.svg');
+    url('https://i.imgur.com/3waGp61.png');
 }
 .text {
   position: absolute;
@@ -57,7 +57,31 @@ export default {
 .arrow {
   position: absolute;
   top: 80%;
-  left: 45%;
+  left: 47%;
   width: 90%;
+}
+@media screen and (max-width: 480px) {
+  .arrow {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .arrow {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 769) {
+  .arrow {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    width: 20%;
+  }
 }
 </style>

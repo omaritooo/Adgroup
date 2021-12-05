@@ -34,7 +34,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    'nuxt-compress'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,8 +44,26 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    // 'nuxt-compress',
+    //   {
+    //     gzip: {
+    //       threshold: 8192,
+    //     },
+    //     brotli: {
+    //       threshold: 8192,
+    //     },
+    //   },
+    'nuxt-compress'
   ],
+  'nuxt-compress': {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
+  },
   fontawesome: {
     icons: {
       regular:['faEnvelope'],

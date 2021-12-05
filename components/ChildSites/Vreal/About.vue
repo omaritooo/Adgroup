@@ -1,13 +1,15 @@
 <template>
   <div class="bg-white">
-    <div class="flex justify-center px-20 py-10 text-left">
-      <img class="w-1/3 p-10" src="/build1.svg" alt="" />
+    <div
+      class="flex flex-col justify-center px-8 py-10 text-left  lg:px-20 lg:flex-row"
+    >
+      <img class="w-full p-10 lg:w-1/3" src="/build1.png" alt="" />
       <div
         style="
           background-image: url('/vrlogo.svg');
           background-repeat: no-repeat;
         "
-        class="flex flex-col w-1/3 py-10 my-auto text-black align-middle bg-opacity-25  bg-opacity-20 gap-y-3"
+        class="flex flex-col w-full py-10 my-auto text-black align-middle  md:w-full lg:w-1/3 bg-opacity-20 gap-y-3"
       >
         <h1 class="text-5xl font-bold">What’s Vividly</h1>
         <p class="text-lg">

@@ -1,15 +1,15 @@
 <template>
-  <div class="py-24 px-96">
+  <div class="px-2 py-24 md:px-10 2xl:px-96">
     <div class="text-center">
       <h1 class="text-5xl text-black">Services</h1>
-      <p class="w-1/2 mx-auto mt-6 text-center text-black">
+      <p class="mx-auto mt-6 text-center text-black lg:w-1/2">
         The way things are developing around us is super-fast to keep up Smarty
         gathered brilliant minds to develop and operate on the most complex and
         advanced AR and VR technologies to provide schools and institutes the
         optimum quality of augmented and virtual reality education
       </p>
     </div>
-    <div class="grid grid-cols-2 px-10 mt-10 text-black">
+    <div class="grid grid-cols-1 px-10 mt-10 text-black lg:grid-cols-2">
       <div class="flex flex-col px-8 py-20 bg-white shadow-lg gap-y-4">
         <h1 class="text-3xl font-bold text-blue-900">AR</h1>
         <p class="text-lg">

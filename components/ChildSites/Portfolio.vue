@@ -1,38 +1,30 @@
 <template>
   <div class="flex flex-col bg-white">
-    <div class="z-50 px-32 py-20 text-black">
-      <h1 class="p-4 text-5xl text-center text-black">
+    <div class="z-50 py-20 md:px-32">
+      <h1 class="text-center text-red-800 md:p-4 md:text-5xl">
         Portfolio and Past Work
       </h1>
-      <div class="flex justify-center text-gray-600 gap-x-5 tabs">
-        <a class="font-bold text-yellow-800 text-opacity-50 tab tab-bordered"
-          >All</a
-        >
-        <a
-          class="font-bold text-yellow-800 text-opacity-50  tab tab-bordered focus:tab-active"
-          >Sekulen</a
-        >
-        <a
-          class="font-bold text-yellow-800 text-opacity-50  tab tab-bordered focus:tab-active"
-          >Echeveris</a
-        >
-        <a
-          class="font-bold text-yellow-800 text-opacity-50  tab tab-bordered focus:tab-active"
-          >Koboi</a
-        >
-        <a
-          class="font-bold text-yellow-800 text-opacity-50  tab tab-bordered hover:tab-active"
-          >Sansevierrie</a
-        >
+      <div class="flex justify-center text-sm md:gap-x-5 tabs">
+        <a class="text-sm border-green-400 tab tab-bordered tab-active">All</a>
+        <a class="text-sm tab tab-bordered focus:tab-active">Sekulen</a>
+        <a class="text-sm tab tab-bordered focus:tab-active">Echeveris</a>
+        <a class="text-sm tab tab-bordered focus:tab-active">Koboi</a>
+        <a class="text-sm tab tab-bordered hover:tab-active">Sansevierrie</a>
       </div>
-      <div class="flex flex-wrap justify-around w-3/4 mx-auto mt-6 gap-y-3">
-        <div v-for="te in da" :key="te.index" class="w-1/3 px-4">
+      <div
+        class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
+      >
+        <div
+          v-for="te in da"
+          :key="te.index"
+          class="w-full px-4 md:w-1/2 lg:w-1/3"
+        >
           <Card :dum="te" />
         </div>
       </div>
       <div class="mt-10 text-center">
         <button
-          class="px-4 text-white border-2 border-white rounded-lg  bg-site-babyblue"
+          class="px-4 text-white bg-transparent border-2 border-white rounded-lg "
         >
           Show More
         </button>
