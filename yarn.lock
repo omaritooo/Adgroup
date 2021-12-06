@@ -4119,7 +4119,7 @@
     "safe-regex" "^2.1.1"
     "semver" "^7.3.4"
 
-"eslint-plugin-vue@^7.1.0", "eslint-plugin-vue@^7.12.1", "eslint-plugin-vue@^7.9.0":
+"eslint-plugin-vue@^7.1.0", "eslint-plugin-vue@^7.20.0", "eslint-plugin-vue@^7.9.0":
   "integrity" "sha512-oVNDqzBC9h3GO+NTgWeLMhhGigy6/bQaQbHS+0z7C4YEu/qK/yxHvca/2PTZtGNPsCrHwOTgKMrwu02A9iPBmw=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-vue/-/eslint-plugin-vue-7.20.0.tgz"
   "version" "7.20.0"
@@ -4197,7 +4197,7 @@
     "normalize-path" "^3.0.0"
     "schema-utils" "^3.1.1"
 
-"eslint@*", "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8", "eslint@^6.2.0 || ^7.0.0 || ^8.0.0", "eslint@^7.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.12.1", "eslint@^7.27.0", "eslint@^7.29.0", "eslint@^7.5.0 || ^8.0.0", "eslint@>=4.19.1", "eslint@>=5", "eslint@>=5.0.0", "eslint@>=5.16.0", "eslint@>=7", "eslint@>=7.0.0", "eslint@>=7.17.0":
+"eslint@*", "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8", "eslint@^6.2.0 || ^7.0.0 || ^8.0.0", "eslint@^7.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.12.1", "eslint@^7.27.0", "eslint@^7.32.0", "eslint@^7.5.0 || ^8.0.0", "eslint@>=4.19.1", "eslint@>=5", "eslint@>=5.0.0", "eslint@>=5.16.0", "eslint@>=7", "eslint@>=7.0.0", "eslint@>=7.17.0":
   "integrity" "sha512-VHZ8gX+EDfz+97jGcgyGCyRia/dPOd6Xh9yPv8Bl1+SoaIwD+a/vlrOmGRUyOYu7MwUhc7CxqeaDZU13S4+EpA=="
   "resolved" "https://registry.npmjs.org/eslint/-/eslint-7.32.0.tgz"
   "version" "7.32.0"

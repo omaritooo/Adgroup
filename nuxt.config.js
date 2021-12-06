@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  
+  target: 'static',
+
   head: {
     title: 'adgroup',
     meta: [
@@ -11,7 +12,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' }
     ]
   },
 
@@ -20,7 +21,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [ { src: './plugins/particles.js', mode: 'client' },
+  plugins: [{ src: './plugins/particles.js', mode: 'client' },
   { src: './plugins/carousel.js', mode: 'client' }
 
   ],
@@ -66,7 +67,7 @@ export default {
   },
   fontawesome: {
     icons: {
-      regular:['faEnvelope'],
+      regular: ['faEnvelope'],
       brands: [
         "faFacebook",
         "faFacebookF",
@@ -78,7 +79,7 @@ export default {
         "faPinterest",
         "faTelegramPlane",
         "faLinkedin",
-       
+
       ],
       solid: ['faArrowRight', 'faTimes', 'faExpandArrowsAlt', 'faCompress', 'faLink', 'faQuoteLeft', 'faPhoneAlt', 'faMapMarkerAlt', 'faEnvelope']
     }
@@ -101,7 +102,11 @@ export default {
         })
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+    },
+
+  },
+  generate: {
+    routes: ['/users/1', '/users/2', '/users/3']
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -115,5 +120,6 @@ export default {
     },
     transpile: ['particles.vue']
 
-  }
+  },
+
 }
