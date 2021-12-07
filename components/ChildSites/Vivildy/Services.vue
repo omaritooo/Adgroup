@@ -1,20 +1,26 @@
 <template>
-  <div class="py-16 text-black bg-white ">
-      <h1 class="mb-20 text-6xl font-bold text-center">
+  <div class="relative text-black bg-site-gold ">
+      <h1 class="absolute top-0 left-0 z-50 p-10 text-6xl font-bold text-center">
         Services
       </h1>
        <client-only>
-                 <div class="w-full px-4 mx-auto lg:w-1/2 lg:px-0 2xl:w-1/3 ">
-              <carousel scroll-per-page="false" :per-page-custom="[[350, 1], [768, 2], [1024, 2]]" pagination-enabled="false" center-mode="true" autoplay="true" per-page="2" autoplay-hover-pause="true" pagination-size="0" loop="true">
-                 <slide>
-    <div class="mx-auto 2xl:w-1/3 test">Interactive Table</div>
-  </slide>
-   <slide>
-    <div class="mx-auto 2xl:w-1/3 test"><span class="flex-wrap mb-4 text-xl tester">Mobile Application</span></div>
-  </slide>
-           <slide>
-    <div class="w-full mx-auto 2xl:w-1/3 test"><span class="flex-wrap text-xl">Virtual Book</span></div>
-  </slide>
+                 <div class="w-full mx-auto ">
+              <carousel class="" :navigation-enabled="true" scroll-per-page="false" :per-page-custom="[[350, 1], [768, 2], [1024, 4]]" pagination-enabled="true" center-mode="true" autoplay="true"  autoplay-hover-pause="true" pagination-size="10" loop="true">
+                <slide v-for="(dat, index) in data" :key="dat.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-yellow-500">
+                  <div class="flex flex-col h-full py-24 lg:px-4 ">
+                    <div class="flex flex-col px-4 my-auto gap-y-4 ">
+                      <span class="numbers text-7xl">
+                        {{index}}
+                      </span>
+                      <h1 class="text-4xl font-bold uppercase">
+                        {{dat.name}}
+                      </h1>
+                      <p class="text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
+                        {{dat.cont}}
+                      </p>
+                    </div>
+                  </div>
+                </slide>
   
                   
            
@@ -31,12 +37,58 @@
 </template>
 
 <script>
-export default {
 
+export default {
+data() {
+  return {
+    data: [
+      {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      },
+       {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      }, {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      }
+      , {
+        name: 'service',
+        cont: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula mauris, faucibus non bibendum vitae, eleifend nec augue. Mauris diam lorem, vehicula a posuere at.'
+      }
+    ]
+  }
+},
 }
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .test{
     height: 30vh;
     width: 15vw;
@@ -125,5 +177,10 @@ export default {
   -webkit-transition: height 0.3s ease-in-out, line-height 0.3s ease-in-out, width 0.3s ease-in-out;
   background-position: center ;
 }}
+
+.numbers{
+  font-family: 'Fredoka One', cursive;
+
+}
 
 </style>

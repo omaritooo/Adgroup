@@ -106,7 +106,7 @@ export default {
 
   },
   generate: {
-    routes: ['/users/1', '/users/2', '/users/3']
+    routes: ['/vivildy', '/vreal', '/smarty']
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

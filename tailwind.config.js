@@ -292,7 +292,7 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
-      '2r' : ['2rem', {lineHeight: '1'}]
+      '2r': ['2rem', { lineHeight: '1' }]
     },
     fontWeight: {
       thin: '100',
@@ -876,7 +876,7 @@ module.exports = {
     container: ['responsive'],
     contrast: ['responsive'],
     cursor: ['responsive'],
-    display: ['responsive'],
+    display: ['responsive', 'group-hover'],
     divideColor: ['responsive', 'dark'],
     divideOpacity: ['responsive', 'dark'],
     divideStyle: ['responsive'],
@@ -973,12 +973,12 @@ module.exports = {
     translate: ['responsive', 'hover', 'focus'],
     userSelect: ['responsive'],
     verticalAlign: ['responsive'],
-    visibility: ['responsive'],
+    visibility: ['responsive', 'group-hover'],
     whitespace: ['responsive'],
     width: ['responsive'],
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [require('tailwindcss-debug-screens'),       require('daisyui'),
-],
+  plugins: [require('tailwindcss-debug-screens'), require('daisyui'),
+  ],
 }

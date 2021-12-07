@@ -1,11 +1,11 @@
 <template>
   <div class="block py-4 text-white bg-black bckg bg-opacity-40">
     <nav
-      class="relative flex flex-wrap items-center px-10  justify-evenly bg-blueGray-500"
+      class="relative flex flex-wrap items-center px-10 justify-evenly bg-blueGray-500"
     >
       <div class="container flex flex-wrap items-center justify-evenly">
         <div
-          class="relative flex justify-between w-full px-4  lg:w-auto lg:static lg:block lg:justify-start"
+          class="relative flex justify-between w-full px-4 lg:w-auto lg:static lg:block lg:justify-start"
         >
           <a class="inline-block mr-4 font-bold text-white uppercase">
             <img
@@ -15,7 +15,7 @@
             />
           </a>
           <button
-            class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer  lg:hidden focus:outline-none"
+            class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
             type="button"
           >
             <button
@@ -24,7 +24,7 @@
             >
               <span class="sr-only">Open main menu</span>
               <div
-                class="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2  left-1/2 top-1/2"
+                class="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
               >
                 <span
                   aria-hidden="true"
@@ -94,13 +94,13 @@
             leave-to-class="transform scale-95 opacity-0"
           >
             <ul
-              class="flex flex-col justify-end mr-auto list-none  md:gap-y-4 md:gap-x-7 lg:flex-row"
+              class="flex flex-col justify-end mr-auto list-none md:gap-y-4 md:gap-x-7 lg:flex-row"
             >
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
                     ref="home"
-                    class="w-full mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
+                    class="w-full mt-2 ml-auto text-gray-300 uppercase md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
                     Home
                   </button></nuxt-link
@@ -109,7 +109,7 @@
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
+                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
                     About Us
                   </button></nuxt-link
@@ -118,7 +118,7 @@
               <li class="nav-item">
                 <nuxt-link to="" href="#"
                   ><button
-                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
+                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
                     Contact Us
                   </button></nuxt-link
@@ -148,15 +148,7 @@ export default {
   },
   method: {
     meth() {
-      // if (this.$store.state.partnerT == false)
-      // {
-      //   this.$store.commit('partnerT')
-      // }
-      // else if(this.$store.state.partnerT == true)
-      // {
-      //   this.$store.commit('partnerF')
-      // }
-      // this.$store.commit('partnerT')
+     
     },
     toggleNavbar() {
       this.showMenu = !this.showMenu
