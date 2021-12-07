@@ -2,7 +2,7 @@
   <div class="bg-blue-900">
     <div class="pt-20 lg:px-96">
       <img class="h-20 w-62" src="/smartly - logo copy.svg" alt="" />
-      <div class="flex flex-col py-6 gap-y-5">
+      <div class="flex flex-col py-6 text-white gap-y-5">
         <a class="flex">
           <font-awesome-icon
             :icon="['fas', 'phone-alt']"
@@ -31,22 +31,22 @@
           <font-awesome-icon
             :icon="['fab', 'facebook']"
             size="lg"
-            class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+            class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
           />
           <font-awesome-icon
             :icon="['fab', 'twitter']"
             size="lg"
-            class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+            class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
           />
           <font-awesome-icon
             :icon="['fab', 'instagram']"
             size="lg"
-            class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+            class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
           />
           <font-awesome-icon
             :icon="['fab', 'snapchat']"
             size="lg"
-            class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+            class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
           />
         </div>
       </div>

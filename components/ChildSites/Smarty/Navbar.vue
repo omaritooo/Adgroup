@@ -99,7 +99,7 @@
               class="flex flex-col ml-auto list-none opacity-100  lg:ml-0 gap-y-4 gap-x-7 md:justify-end lg:flex-row"
             >
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link to="#shome" href="#shome"
                   ><button
                     ref="home"
                     class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
@@ -109,7 +109,7 @@
                 >
               </li>
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link to="#sabout" href="#sabout"
                   ><button
                     class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >
@@ -118,7 +118,7 @@
                 >
               </li>
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link to="#scourses" href="#scourses"
                   ><button
                     class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >
@@ -127,7 +127,7 @@
                 >
               </li>
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link to="#scontact" href="#scontact"
                   ><button
                     class="px-4 py-2 text-base text-gray-400 uppercase  active hover:text-white"
                   >

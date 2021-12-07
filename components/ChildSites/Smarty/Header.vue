@@ -1,8 +1,8 @@
 <template>
   <div class="head">
-    <div class="header">
+    <div class="text-white header">
       <div
-        class="flex flex-col mx-auto font-bold text-left  md:text-xl lg:text-5xl gap-y-2 text"
+        class="flex flex-col mx-auto font-bold text-left md:text-xl lg:text-5xl gap-y-2 text"
       >
         Fully Integrated Media and Production Agency
         <span class="text-2xl font-thin"> Know More </span>

@@ -2,17 +2,11 @@
   <div class="flex flex-col bg-white">
     <div class="z-50 py-20 md:px-32">
       <h1 class="text-center text-red-800 md:p-4 md:text-5xl">
-        Portfolio and Past Work
+        Portfolio
       </h1>
-      <div class="flex justify-center text-sm md:gap-x-5 tabs">
-        <a class="text-sm border-green-400 tab tab-bordered tab-active">All</a>
-        <a class="text-sm tab tab-bordered focus:tab-active">Sekulen</a>
-        <a class="text-sm tab tab-bordered focus:tab-active">Echeveris</a>
-        <a class="text-sm tab tab-bordered focus:tab-active">Koboi</a>
-        <a class="text-sm tab tab-bordered hover:tab-active">Sansevierrie</a>
-      </div>
+      
       <div
-        class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
+        class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
       >
         <div
           v-for="te in da"

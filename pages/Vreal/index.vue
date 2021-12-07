@@ -1,16 +1,16 @@
 <template>
   <div class="relative overflow-x-hidden">
-    <Header :linker="linker" />
+    <Header :linker="linker" id="vrabout" />
 
-    <Navbar class="absolute top-0 w-full" :imgsrc="src" />
+    <Navbar class="absolute top-0 w-full" :about="about" :contact="contact" :imgsrc="src" />
     <About />
     <Accom />
     <Services />
-    <Portf />
-    <div class="">
+    <Portf  />
+    <div class="" id="vrcontact">
       <img width="1920" src="/rect.svg" alt="" />
       <div
-        class="flex flex-col px-8 py-10 pb-4 text-justify  lg:flex-row lg:px-20 lg:pt-20 justify-evenly bg-site-vblue"
+        class="flex flex-col px-8 py-10 pb-4 text-justify lg:flex-row lg:px-20 lg:pt-20 justify-evenly bg-site-vblue"
       >
         <div class="flex flex-col text-lg text-white">
           <img class="w-32 h-32 mb-6" src="/vrlogo.svg" />
@@ -39,22 +39,22 @@
             <font-awesome-icon
               :icon="['fab', 'facebook']"
               size="lg"
-              class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
             />
             <font-awesome-icon
               :icon="['fab', 'twitter']"
               size="lg"
-              class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
             />
             <font-awesome-icon
               :icon="['fab', 'instagram']"
               size="lg"
-              class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
             />
             <font-awesome-icon
               :icon="['fab', 'snapchat']"
               size="lg"
-              class="my-auto transition ease-in-out  hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
             />
           </div>
           <div class="flex flex-col py-4">
@@ -68,34 +68,34 @@
               type="text"
               name=""
               placeholder="Name"
-              class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-40 border-site-babyblue bg-opacity-40"
+              class="w-full p-4 placeholder-current bg-black border rounded-t-lg border-opacity-40 border-site-babyblue bg-opacity-40"
             />
             <div class="flex gap-x-3">
               <input
                 type="text"
                 name=""
                 placeholder="Phone"
-                class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-babyblue bg-opacity-40"
+                class="w-full p-4 placeholder-current bg-black border rounded-t-lg border-opacity-20 border-site-babyblue bg-opacity-40"
               />
               <input
                 type="text"
                 name=""
                 placeholder="Email"
-                class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-babyblue bg-opacity-40"
+                class="w-full p-4 placeholder-current bg-black border rounded-t-lg border-opacity-20 border-site-babyblue bg-opacity-40"
               />
             </div>
             <input
               type="text"
               name=""
               placeholder="Name"
-              class="w-full p-4 placeholder-current bg-black rounded-t-lg  border-site-babyblue bg-opacity-40"
+              class="w-full p-4 placeholder-current bg-black rounded-t-lg border-site-babyblue bg-opacity-40"
             />
             <textarea
               rows="6"
-              class="w-full p-4 placeholder-current bg-black border rounded-t-lg  h-1/2 border-opacity-20 border-site-babyblue bg-opacity-40"
+              class="w-full p-4 placeholder-current bg-black border rounded-t-lg h-1/2 border-opacity-20 border-site-babyblue bg-opacity-40"
             ></textarea>
             <button
-              class="w-full p-2 text-white placeholder-current border rounded-b-lg  bg-site-babyblue border-opacity-20"
+              class="w-full p-2 text-white placeholder-current border rounded-b-lg bg-site-babyblue border-opacity-20"
             >
               <font-awesome-icon
                 :icon="['fab', 'telegram-plane']"
@@ -131,6 +131,8 @@ export default {
     return {
       src: '/vreal.svg',
       linker: '#aboutVR',
+      contact: '#vrcontact',
+      about: '#vrabout'
     }
   },
 }

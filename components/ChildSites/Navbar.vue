@@ -107,7 +107,7 @@
                 >
               </li>
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link :to="about" href="#"
                   ><button
                     class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
@@ -116,7 +116,7 @@
                 >
               </li>
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link :to="contact" href="#"
                   ><button
                     class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
                   >
@@ -136,6 +136,8 @@
 export default {
   props: {
     imgsrc: String,
+    about: String,
+    contact: String
   },
   data() {
     return {

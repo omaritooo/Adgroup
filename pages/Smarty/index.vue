@@ -1,16 +1,16 @@
 <template>
   <div class="relative overflow-x-hidden bg-white">
-    <Header />
+    <Header id="shome" />
     <Navbar class="absolute top-0 w-full" />
-    <About />
-    <Grad />
+    <About id="sabout" />
+    <Grad id="scourses" />
     <div class="back2">
       <Info />
     </div>
     <div class="back">
       <Port class="back" />
     </div>
-    <Contact />
+    <Contact id="scontact" />
     <Footer />
   </div>
 </template>

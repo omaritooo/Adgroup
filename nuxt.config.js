@@ -55,16 +55,18 @@ export default {
     //       threshold: 8192,
     //     },
     //   },
-    'nuxt-compress'
-  ],
-  'nuxt-compress': {
-    gzip: {
-      threshold: 8192,
-    },
-    brotli: {
-      threshold: 8192,
-    },
-  },
+    [
+      'nuxt-compress',
+      {
+        gzip: {
+          threshold: 8192,
+        },
+        brotli: {
+          threshold: 8192,
+        },
+      },
+    ],  ],
+  
   fontawesome: {
     icons: {
       regular: ['faEnvelope'],
