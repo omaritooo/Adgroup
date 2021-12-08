@@ -1,30 +1,37 @@
 <template>
   <div>
     <div class="hidden lg:block">
-      <div class="hidden ruler lg:block">
-        <div class="w-56 h-56 logo">
-          <img src="/ad-logo.svg" alt="" />
+      <div class="hidden ruler lg:block group">
+        <div
+          class="w-32 h-32 transition-opacity duration-150 opacity-100  logo group-hover:opacity-0"
+        >
+          <img class="" src="/logo_black.png" alt="" />
+        </div>
+        <div
+          class="w-48 h-48 transition-opacity duration-150 opacity-0  logo group-hover:opacity-100"
+        >
+          <img class="" src="/ad-logo.svg" alt="" />
         </div>
         <nuxt-link to="/vivildy" class="rule-cont">
           <div class="gradient"></div>
           <div class="rule1"></div>
           <div class="text-4xl text-white text">Vivildy</div>
         </nuxt-link>
-        <nuxt-link to="/vreal" class="rule-cont">
+        <nuxt-link to="/Vreal" class="rule-cont">
           <div class="gradient"></div>
-          <div class="rule1"></div>
+          <div class="rule2"></div>
           <div class="text-4xl text-white text">Vreal</div>
         </nuxt-link>
         <nuxt-link to="/smarty" class="rule-cont">
           <div class="gradient"></div>
-          <div class="rule1"></div>
+          <div class="rule3"></div>
           <div class="text-4xl text-white shadow-lg text">Smart</div>
         </nuxt-link>
       </div>
     </div>
     <div class="block px-10 py-20 bg-black lg:hidden">
       <div class="flex justify-around">
-        <nuxt-link to="/vreal" class="w-max">
+        <nuxt-link to="/Vreal" class="w-max">
           <img src="/vreal.svg" class="w-20 h-20" alt="" />
         </nuxt-link>
         <nuxt-link to="/vivildy" class="">
@@ -46,7 +53,7 @@ export default {}
 .logo {
   position: absolute;
   top: 3%;
-  left: 44%;
+  left: 46%;
   z-index: 200;
 }
 .ruler {
@@ -86,7 +93,7 @@ export default {}
 .text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   z-index: 1000;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -119,9 +126,76 @@ export default {}
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  background: url('https://i.imgur.com/3waGp61.png');
+  background: url('https://i.imgur.com/3ABOZR1.png');
 }
+
 .rule-cont:hover .rule1 {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+
+  left: 0;
+  height: 100vh;
+  width: 33vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  -moz-transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  -webkit-transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+}
+.rule2 {
+  z-index: 40;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 33vw;
+  opacity: 0;
+  transform: translateY(-50px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background: url('https://i.imgur.com/HlGUV4X.png');
+}
+
+.rule-cont:hover .rule2 {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+
+  left: 0;
+  height: 100vh;
+  width: 33vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  -moz-transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  -webkit-transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+}
+
+.rule-cont:hover .logo {
+  display: none;
+}
+.rule3 {
+  z-index: 40;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 33vw;
+  opacity: 0;
+  transform: translateY(-50px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background: url('https://i.imgur.com/fizXvKo.png');
+}
+
+.rule-cont:hover .rule3 {
   position: absolute;
   top: 0;
   opacity: 1;

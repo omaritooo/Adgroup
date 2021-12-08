@@ -13,43 +13,45 @@
               <font-awesome-icon
                 :icon="['fas', 'phone-alt']"
                 class="my-auto mr-8"
-              />+20 226309636
+              />+20 226309636 |  +20 01013645828
             </a>
             <a class="flex">
               <font-awesome-icon
                 :icon="['fas', 'envelope']"
                 class="my-auto mr-8"
-              /><span>CARE@ADGROUP.TECH</span>
+              /><span>INFO@ADGROUP.TECH</span>
             </a>
             <a class="flex">
               <font-awesome-icon
                 :icon="['fas', 'map-marker-alt']"
                 size="lg"
                 class="my-auto mr-8"
-              /><span>Fifth Settlement Copond Retaj (AD Group)</span>
+              /><span> 9 Ritaj Compound, Fifth settlement, New Cairo</span>
             </a>
           </div>
           <div class="flex py-6 gap-x-4">
-            <font-awesome-icon
-              :icon="['fab', 'facebook']"
-              size="lg"
-              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
-            />
-            <font-awesome-icon
-              :icon="['fab', 'twitter']"
-              size="lg"
-              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
-            />
-            <font-awesome-icon
-              :icon="['fab', 'instagram']"
-              size="lg"
-              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
-            />
-            <font-awesome-icon
-              :icon="['fab', 'snapchat']"
-              size="lg"
-              class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
-            />
+            <a href="https://www.facebook.com/ADGrouptech" target="_blank">
+              <font-awesome-icon
+                :icon="['fab', 'facebook']"
+                size="lg"
+                class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              />
+            </a>
+            <a href="https://twitter.com/ADGroup2021" target="_blank">
+              <font-awesome-icon
+                :icon="['fab', 'twitter']"
+                size="lg"
+                class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/ad-group-technology" target="_blank">
+              <font-awesome-icon
+                :icon="['fab', 'linkedin']"
+                size="lg"
+                class="my-auto transition ease-in-out hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+              />
+            </a>
+          
           </div>
           <div class="flex flex-col py-4">
             <span>© 2021 <span class="font-bold">AD Group</span></span>

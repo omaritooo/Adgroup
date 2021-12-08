@@ -1,3 +1,4 @@
+import axios from 'axios'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
@@ -65,8 +66,8 @@ export default {
           threshold: 8192,
         },
       },
-    ],  ],
-  
+    ],],
+
   fontawesome: {
     icons: {
       regular: ['faEnvelope'],
@@ -105,10 +106,21 @@ export default {
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
     },
+    mode: 'history'
+
+    // extendRoutes(routes, resolve) {
+    //   routes.push({
+    //     name: 'vivildy',
+    //     path: '/vivildy',
+    //     component: resolve(__dirname, 'pages//Vivildy/index.vue')
+
+    //   })
+    // }
 
   },
   generate: {
-    routes: ['/vivildy', '/vreal', '/smarty']
+
+
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

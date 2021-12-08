@@ -30,18 +30,23 @@
       <h1 class="text-center text-white md:p-4 md:text-5xl">
         Portfolio and Past Work
       </h1>
-      <div class="flex justify-center text-sm md:gap-x-5 tabs">
-        <a class="text-sm border-green-400 tab tab-bordered tab-active">All</a>
-        <a class="text-sm tab tab-bordered focus:tab-active">Sekulen</a>
-        <a class="text-sm tab tab-bordered focus:tab-active">Echeveris</a>
-        <a class="text-sm tab tab-bordered focus:tab-active">Koboi</a>
-        <a class="text-sm tab tab-bordered hover:tab-active">Sansevierrie</a>
+      <div class="flex justify-center text-lg md:gap-x-5 tabs">
+        <button class="text-gray-400 focus:text-white">All</button>
+        <button
+          v-for="d in cit"
+          :key="d.index"
+          class="text-gray-400 focus:text-white"
+        >
+          {{ d.title }}
+        </button>
       </div>
       <div
+        v-for="dat in data"
+        :key="dat.index"
         class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
       >
         <div
-          v-for="te in da"
+          v-for="te in dat.folios"
           :key="te.index"
           class="w-full px-4 md:w-1/2 lg:w-1/3"
         >
@@ -60,7 +65,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import Card from '../Adgroup/Card.vue'
 import Particles from '../Adgroup/Particles.vue'
 export default {
@@ -80,12 +84,13 @@ export default {
     da() {
       return this.test.slice(0, 6)
     },
+    cit() {
+      return this.$store.state.cities
+    },
   },
   mounted() {
-    this.$store.commit('getDummy')
-    axios.get('https://jsonplaceholder.typicode.com/photos').then((res) => {
-      this.test = res.data
-    })
+    this.$store.dispatch('getDummy')
+    this.$store.dispatch('getCity')
   },
 }
 </script>

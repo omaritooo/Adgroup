@@ -4,6 +4,7 @@
     <Header class="md:block" />
     <Video />
     <Portfolio />
+    <Partners />
     <Footer />
   </div>
 </template>
@@ -14,6 +15,7 @@ import Video from '../components/Adgroup/Video.vue'
 import Portfolio from '../components/Adgroup/Portfolio.vue'
 import Footer from '../components/Adgroup/Footer.vue'
 import Navbar from '../components/Adgroup/Navbar.vue'
+import Partners from '../components/Adgroup/Partners.vue'
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Portfolio,
     Footer,
     Navbar,
+    Partners,
   },
 }
 </script>

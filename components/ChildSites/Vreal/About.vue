@@ -11,12 +11,17 @@
         "
         class="flex flex-col w-full py-10 my-auto text-black align-middle  md:w-full lg:w-1/3 bg-opacity-20 gap-y-3"
       >
-        <h1 class="text-5xl font-bold">What’s Vividly</h1>
+        <h1 class="text-5xl font-bold">What’s VReal</h1>
         <p class="text-lg">
-          We are a fully integrated media and production agency and we are here
-          to introduce a new scoop of services for the media and advertisement
-          market, contributing advanced technologies for media, Smart display
-          solutions, advertisement, and production
+          V real is a collection of solutions made to serve the real estate
+          industry, we know how buying and selling the property nowadays become
+          difficult and how the company’s sales team struggling to find the
+          potential customer and close the deal, also on the other hand the
+          property buyer has a lot of issues with the property details
+          information availability Our professional programmers and technicians
+          work hard to implement several solutions for the real estate industry
+          that can help them to sell/ increase their revenue and meet their
+          client's satisfaction
         </p>
       </div>
     </div>
