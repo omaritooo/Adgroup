@@ -94,7 +94,7 @@
             leave-to-class="transform scale-95 opacity-0"
           >
             <ul
-              class="flex flex-col justify-end list-none  lg:mx-auto md:gap-y-4 md:gap-x-7 lg:flex-row"
+              class="flex flex-col justify-end mr-auto list-none  lg:mr-auto md:gap-y-4 md:gap-x-7 lg:flex-row"
             >
               <li class="nav-item">
                 <nuxt-link to="" href="#"
@@ -124,7 +124,7 @@
                   </button></nuxt-link
                 >
               </li>
-              <li class="nav-item">
+              <li class="block nav-item lg:hidden">
                 <nuxt-link :to="contact" href="#"
                   ><button
                     class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
@@ -136,7 +136,14 @@
             </ul>
           </transition>
         </div>
-        <div>
+        <div class="hidden lg:flex">
+          <nuxt-link :to="contact" href="#"
+            ><button
+              class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
+            >
+              Request Demo
+            </button></nuxt-link
+          >
           <img
             class="hidden my-auto md:w-32 md:h-10 lg:block"
             src="/ad-logo.svg"

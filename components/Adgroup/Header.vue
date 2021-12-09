@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-x-hidden">
     <div class="hidden lg:block">
       <div class="hidden ruler lg:block">
         <!-- <div
@@ -38,8 +38,13 @@
           </div>
         </nuxt-link>
       </div>
+      <div>
+        <nuxt-link to="#vid" class="arrow">
+          <img src="/arrow.svg" alt="" />
+        </nuxt-link>
+      </div>
     </div>
-    <div class="block px-10 py-20 bg-black lg:hidden">
+    <div class="block px-4 py-20 bg-black lg:hidden">
       <div class="flex justify-around">
         <nuxt-link to="/Vreal" class="w-max">
           <img src="/vreal.svg" class="w-20 h-20" alt="" />
@@ -60,6 +65,37 @@ export default {}
 </script>
 
 <style scoped>
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  width: 30%;
+  z-index: 3000;
+}
+@media screen and (max-width: 480px) {
+  .arrow {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .arrow {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 769) {
+  .arrow {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    width: 20%;
+  }
+}
 .logo {
   position: absolute;
   top: 3%;

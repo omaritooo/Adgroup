@@ -6,11 +6,10 @@
        <client-only>
                  <div class="w-full mx-auto ">
               <carousel class="" :navigation-enabled="true" scroll-per-page="false" :per-page-custom="[[350, 1], [768, 2], [1024, 4]]" pagination-enabled="true" center-mode="true" autoplay="true"  autoplay-hover-pause="true" pagination-size="10" loop="true">
-                <slide v-for="(dat, index) in data" :key="dat.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-gray-300">
+                <slide v-for="dat in data" :key="dat.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-gray-300">
                   <div class="flex flex-col h-full py-24 lg:px-4 ">
                     <div class="flex flex-col px-4 my-auto gap-y-4 ">
                       <span class="numbers text-7xl">
-                        {{index}}
                       </span>
                       <h1 class="text-4xl font-bold uppercase">
                         {{dat.name}}

@@ -85,7 +85,7 @@
         </div>
         <div
           :class="{ hidden: !showMenu, flex: showMenu }"
-          class="items-center md:items-start lg:flex lg:flex-grow"
+          class="items-center md:items-center lg:flex lg:flex-grow"
         >
           <transition
             enter-active-class="transition duration-100 ease-out"
@@ -96,7 +96,7 @@
             leave-to-class="transform scale-95 opacity-0"
           >
             <ul
-              class="flex flex-col ml-auto list-none opacity-100  lg:ml-0 gap-y-4 gap-x-7 md:justify-end lg:flex-row"
+              class="flex flex-col list-none opacity-100  gap-y-4 gap-x-7 md:justify-end lg:flex-row"
             >
               <li class="nav-item">
                 <nuxt-link to="#shome" href="#shome"
