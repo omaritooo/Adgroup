@@ -5,14 +5,14 @@
 
       <div v-if="!toggle">
         <div
-          class="flex flex-row-reverse flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
         >
           <div
-            v-for="d in data"
+            v-for="(d, index) in data"
             :key="d.index"
             class="w-full px-4 md:w-1/2 lg:w-1/3"
           >
-            <div v-if="d.id >= 4">
+            <div v-if="index < 6">
               <Card :dum="d" />
             </div>
           </div>

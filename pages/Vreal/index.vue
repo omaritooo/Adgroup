@@ -147,6 +147,21 @@ export default {
       about: '#vrabout',
     }
   },
+  head() {
+    return {
+      title: 'Vreal',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'site1',
+          name: 'Vreal',
+          content:
+            "V real is a collection of solutions made to serve the real estate industry, we know how buying and selling the property nowadays become difficult and how the company’s sales team struggling to find the potential customer and close the deal, also on the other hand the property buyer has a lot of issues with the property details information availability Our professional programmers and technicians work hard to implement several solutions for the real estate industry that can help them to sell/ increase their revenue and meet their client's satisfaction",
+        },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/vfavicon (1).ico' }],
+    }
+  },
 }
 </script>
 

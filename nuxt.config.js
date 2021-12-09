@@ -3,11 +3,11 @@ export default {
   target: 'static',
 
   head: {
-    title: 'adgroup',
+    title: 'Adgroup',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'site0', name: 'Adgroup', content: 'AD GROUP is tech company using advanced technologies to provide the different sectors and industries such as real estate, education, media with solutions that can help them achieve their goals and increase their revenues. we are studying the industries, discovering their suffering and their needs to develop effective solutions that can help them in their marketing and sales.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

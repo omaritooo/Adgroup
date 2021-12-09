@@ -1,31 +1,41 @@
 <template>
   <div>
     <div class="hidden lg:block">
-      <div class="hidden ruler lg:block group">
-        <div
-          class="w-32 h-32 transition-opacity duration-150 opacity-100  logo group-hover:opacity-0"
+      <div class="hidden ruler lg:block">
+        <!-- <div
+          class="w-32 h-32 transition-opacity duration-150 opacity-100 logo group-hover:opacity-0"
         >
           <img class="" src="/logo_black.png" alt="" />
         </div>
         <div
-          class="w-48 h-48 transition-opacity duration-150 opacity-0  logo group-hover:opacity-100"
+          class="w-48 h-48 transition-opacity duration-150 opacity-0 logo group-hover:opacity-100"
         >
           <img class="" src="/ad-logo.svg" alt="" />
-        </div>
-        <nuxt-link to="/vivildy" class="rule-cont">
+        </div> -->
+        <nuxt-link to="/vividly" class="rule-cont group">
           <div class="gradient"></div>
           <div class="rule1"></div>
-          <div class="text-4xl text-white text">Vivildy</div>
+          <div class="text-4xl text-white text group-hover:hidden">Vividly</div>
         </nuxt-link>
-        <nuxt-link to="/Vreal" class="rule-cont">
-          <div class="gradient"></div>
-          <div class="rule2"></div>
-          <div class="text-4xl text-white text">Vreal</div>
+        <nuxt-link to="/Vreal" class="rule-cont group">
+          <div class="group">
+            <div class="transition-opacity duration-150 opacity-100">
+              <img class="w-48 h-20 lblack" src="/ad-logo.svg" alt="" />
+              <img class="w-32 h-32 lcol" src="/logo_black.png" alt="" />
+            </div>
+            <div class="gradient"></div>
+            <div class="rule2"></div>
+            <div class="text-4xl text-white text group-hover:hidden">Vreal</div>
+          </div>
         </nuxt-link>
-        <nuxt-link to="/smarty" class="rule-cont">
+        <nuxt-link to="/smarty" class="rule-cont group">
           <div class="gradient"></div>
           <div class="rule3"></div>
-          <div class="text-4xl text-white shadow-lg text">Smart</div>
+          <div
+            class="mx-auto text-4xl text-center text-white shadow-lg  text group-hover:hidden"
+          >
+            Smarty
+          </div>
         </nuxt-link>
       </div>
     </div>
@@ -54,7 +64,6 @@ export default {}
   position: absolute;
   top: 3%;
   left: 46%;
-  z-index: 200;
 }
 .ruler {
   position: relative;
@@ -93,14 +102,16 @@ export default {}
 .text {
   position: absolute;
   top: 50%;
-  left: 45%;
-  z-index: 1000;
+  left: 42%;
+
+  text-align: center;
+  z-index: 200;
   text-shadow: 2px 2px 4px #000000;
 }
 .rule-cont:hover .gradient {
   position: absolute;
   top: 0;
-  opacity: 0.51;
+  opacity: 0.31;
   transform: scaleY(1);
 
   left: 0;
@@ -143,6 +154,49 @@ export default {}
   transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
   -moz-transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
   -webkit-transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
+}
+
+.lblack {
+  position: absolute;
+  top: 3%;
+  left: 35%;
+  display: block;
+  /* visibility: hidden; */
+  z-index: 100;
+  opacity: 1;
+}
+.lcol {
+  position: absolute;
+  opacity: 0;
+  top: 3%;
+  left: 42%;
+  display: none;
+  /* visibility: visible; */
+  z-index: 100;
+}
+
+.rule-cont:hover .lblack {
+  top: 3%;
+  left: 42%;
+  opacity: 0;
+
+  /* visibility: visible; */
+  display: none;
+  z-index: 100;
+  transition: display 1.75s ease-in-out, opacity 1.75s ease-in-out;
+  -moz-transition: display 1.75s ease-in-out, opacity 1.75s ease-in-out;
+  -webkit-transition: display 1.75s ease-in-out, opacity 1.75s ease-in-out;
+}
+.rule-cont:hover .lcol {
+  top: 3%;
+  left: 42%;
+  /* visibility: hidden; */
+  display: block;
+  opacity: 1;
+  z-index: 100;
+  transition: display 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  -moz-transition: display 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  -webkit-transition: display 0.75s ease-in-out, opacity 0.75s ease-in-out;
 }
 .rule2 {
   z-index: 40;

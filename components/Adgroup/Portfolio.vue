@@ -33,11 +33,19 @@
       <div class="flex justify-center text-lg md:gap-x-5 tabs">
         <button class="text-gray-400 focus:text-white">All</button>
         <button
-          v-for="d in cit"
-          :key="d.index"
-          class="text-gray-400 focus:text-white"
+          class="text-gray-400 cursor-not-allowed focus:text-white"
+          disabled
         >
-          {{ d.title }}
+          vividly
+        </button>
+
+        <button class="text-gray-400 focus:text-white">vReal</button>
+
+        <button
+          class="text-gray-400 cursor-not-allowed focus:text-white"
+          disabled
+        >
+          Smarty
         </button>
       </div>
       <div

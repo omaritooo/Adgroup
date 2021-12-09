@@ -36,6 +36,21 @@ export default {
     Footer,
     Info,
   },
+  head() {
+    return {
+      title: 'Smarty',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'site3',
+          name: 'Smarty',
+          content:
+            'The world has turned into a large complex cloud of information, and the way we consume data and information changed too this change is influencing our daily life and our children are adjusting much better with this change they perceive technology better than we do, Smarty is here to offer the most advanced education methods yet the most simplistic by crafting AR and VR curriculums to schools and universities that will make the learning process more estimable, engaging and more fun',
+        },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/sfavicon.ico' }],
+    }
+  },
 }
 </script>
 
