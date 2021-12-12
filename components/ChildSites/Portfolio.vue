@@ -5,7 +5,7 @@
 
       <div v-if="!toggle">
         <div
-          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
         >
           <div
             v-for="(d, index) in data"
@@ -20,7 +20,7 @@
       </div>
       <div v-if="toggle">
         <div
-          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
         >
           <div
             v-for="d in data"
@@ -35,7 +35,7 @@
       </div>
       <div class="mt-10 text-center">
         <button
-          class="px-4 bg-transparent border-2 rounded-lg  text-site-vblue border-site-vblue"
+          class="px-4 bg-transparent border-2 rounded-lg text-site-vblue border-site-vblue"
           @click="toggle = !toggle"
         >
           Show More

@@ -12,7 +12,7 @@
         >
           <img class="" src="/ad-logo.svg" alt="" />
         </div> -->
-        <nuxt-link to="/vividly" class="rule-cont group">
+        <nuxt-link to="/" class="rule-cont group">
           <div class="gradient"></div>
           <div class="rule1"></div>
           <div class="text-4xl text-white text group-hover:hidden">Vividly</div>
@@ -28,11 +28,11 @@
             <div class="text-4xl text-white text group-hover:hidden">Vreal</div>
           </div>
         </nuxt-link>
-        <nuxt-link to="/smarty" class="rule-cont group">
+        <nuxt-link to="/" class="rule-cont group">
           <div class="gradient"></div>
           <div class="rule3"></div>
           <div
-            class="mx-auto text-4xl text-center text-white shadow-lg  text group-hover:hidden"
+            class="mx-auto text-4xl text-center text-white shadow-lg text group-hover:hidden"
           >
             Smarty
           </div>

@@ -28,9 +28,9 @@
     </div>
     <div class="z-50 py-20 md:px-32">
       <h1 class="text-center text-white md:p-4 md:text-5xl">
-        Portfolio and Past Work
+        Portfolio
       </h1>
-      <div class="flex justify-center text-lg md:gap-x-5 tabs">
+      <div class="flex justify-center text-lg gap-x-2 md:gap-x-5 tabs">
         <button class="text-gray-400 focus:text-white">All</button>
         <button
           class="text-gray-400 cursor-not-allowed focus:text-white"
@@ -48,22 +48,40 @@
           Smarty
         </button>
       </div>
-      <div
-        v-for="dat in data"
-        :key="dat.index"
-        class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
-      >
+      <div >
         <div
-          v-for="te in dat.folios"
-          :key="te.index"
-          class="w-full px-4 md:w-1/2 lg:w-1/3"
+          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
         >
-          <Card :dum="te" />
+          <div
+            v-for="(d, index) in data"
+            :key="d.index"
+            class="w-full px-4 md:w-1/2 lg:w-1/3"
+          >
+            <div v-if="index < 6">
+              <Card :dum="d" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-if="toggle">
+        <div
+          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
+        >
+          <div
+            v-for="d in data"
+            :key="d.index"
+            class="w-full px-4 md:w-1/2 lg:w-1/3"
+          >
+            <div>
+              <Card :dum="d" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="mt-10 text-center">
         <button
-          class="px-4 text-white bg-transparent border-2 border-white rounded-lg "
+          class="px-4 bg-white border-2 rounded-lg text-site-vblue border-site-vblue"
+          @click="toggle = !toggle"
         >
           Show More
         </button>
@@ -80,14 +98,21 @@ export default {
     Card,
     Particles,
   },
+   filters: {
+    reverse(value) {
+      return value.slice().reverse()
+    },
+  },
   data() {
     return {
       test: [],
+            toggle: false,
+
     }
   },
   computed: {
     data() {
-      return this.$store.state.port
+      return this.$store.state.porto.slice().reverse()
     },
     da() {
       return this.test.slice(0, 6)
@@ -98,7 +123,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('getDummy')
-    this.$store.dispatch('getCity')
+    this.$store.dispatch('getPorts')
   },
 }
 </script>
