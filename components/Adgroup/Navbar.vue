@@ -8,11 +8,13 @@
           class="relative flex justify-between w-full px-4  lg:w-auto lg:static lg:block lg:justify-start"
         >
           <a class="inline-block mr-4 font-bold text-white uppercase">
-            <img
-              class="w-20 h-20 my-auto md:w-32 md:h-20"
-              src="/ad-logo.svg"
-              alt=""
-            />
+            <nuxt-link to="/">
+              <img
+                class="w-20 h-20 my-auto md:w-32 md:h-20"
+                src="/ad-logo.svg"
+                alt=""
+              />
+            </nuxt-link>
           </a>
           <button
             class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer  lg:hidden focus:outline-none"
