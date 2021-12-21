@@ -1,33 +1,35 @@
 <template>
   <div class="flex flex-col bck">
-    <div class="absolute z-0 hidden lg:block parts">
-      <Particles
-        color="#2E8BAE"
-        :particles-number="50"
-        shape-type="circle"
-        :particle-size="5"
-        :particle-opacity="0.75"
-        :line-opacity="1"
-        :lines-distance="250"
-        movement-direction="left"
-        lines-color="#2E8BAE"
-        :line-linked="true"
-        :move-speed="1"
-      />
-      <Particles
-        color="#2E8BAE"
-        :particles-number="7"
-        shape-type="circle"
-        :particle-size="50"
-        :particle-opacity="0.25"
-        movement-direction="top"
-        lines-color="#dedede"
-        :line-linked="false"
-        :move-speed="5"
-      />
-    </div>
+    <client-only>
+      <div class="absolute z-0 hidden lg:block parts">
+        <Particles
+          color="#2E8BAE"
+          :particles-number="50"
+          shape-type="circle"
+          :particle-size="5"
+          :particle-opacity="0.75"
+          :line-opacity="1"
+          :lines-distance="250"
+          movement-direction="left"
+          lines-color="#2E8BAE"
+          :line-linked="true"
+          :move-speed="1"
+        />
+        <Particles
+          color="#2E8BAE"
+          :particles-number="7"
+          shape-type="circle"
+          :particle-size="50"
+          :particle-opacity="0.25"
+          movement-direction="top"
+          lines-color="#dedede"
+          :line-linked="false"
+          :move-speed="5"
+        />
+      </div>
+    </client-only>
     <div class="z-50 py-20 md:px-32">
-      <h1 class="text-center text-white md:p-4 md:text-5xl">
+      <h1 class="text-center text-white uppercase md:p-4 md:text-5xl">
         Portfolio
       </h1>
       <div class="flex justify-center text-lg gap-x-2 md:gap-x-5 tabs">
@@ -47,10 +49,10 @@
         >
           Smarty
         </button>
-      </div>
-      <div >
+      </div> 
+      <div v-show="!toggle">
         <div
-          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
         >
           <div
             v-for="(d, index) in data"
@@ -63,9 +65,9 @@
           </div>
         </div>
       </div>
-      <div v-if="toggle">
+      <div v-show="toggle">
         <div
-          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
         >
           <div
             v-for="d in data"
@@ -80,7 +82,7 @@
       </div>
       <div class="mt-10 text-center">
         <button
-          class="px-4 bg-white border-2 rounded-lg text-site-vblue border-site-vblue"
+          class="px-4 text-black bg-white border-2 rounded-lg border-site-vblue"
           @click="toggle = !toggle"
         >
           Show More
@@ -98,31 +100,26 @@ export default {
     Card,
     Particles,
   },
-   filters: {
+  filters: {
     reverse(value) {
       return value.slice().reverse()
     },
   },
   data() {
     return {
-      test: [],
-            toggle: false,
-
+      toggle: false,
     }
   },
   computed: {
     data() {
       return this.$store.state.porto.slice().reverse()
     },
-    da() {
-      return this.test.slice(0, 6)
-    },
-    cit() {
-      return this.$store.state.cities
-    },
+
+    // cit() {
+    //   return this.$store.state.cities
+    // },
   },
   mounted() {
-    this.$store.dispatch('getDummy')
     this.$store.dispatch('getPorts')
   },
 }
@@ -131,7 +128,7 @@ export default {
 <style scoped>
 .parts {
   width: 100%;
-  height: 99%;
+  height: 80%;
 }
 .bck {
   background-image: linear-gradient(

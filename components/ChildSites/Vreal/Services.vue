@@ -1,9 +1,44 @@
 <template>
-  <div class="relative bg-white text-site-vblue ">
+  <div class="relative px-10 bg-black text-site-vblue video-container ">
       <h1 class="absolute top-0 left-0 z-50 p-10 text-6xl font-bold text-center">
         Services
+      
       </h1>
+     <video autoplay muted loop>
+        <source src="/Videoc38.mp4" type="video/mp4" />
+    </video>
        <client-only>
+                 <div class="w-full mx-auto ">
+              <carousel class="" navigation-enabled="true" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" scroll-per-page="false" navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,4]]" pagination-enabled="true" center-mode="true" autoplay="true"  autoplay-hover-pause="true" pagination-size="10" loop="true">
+                <slide  v-for="service in services" :key="service.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-white hover:bg-opacity-10" >
+                  <div class="flex flex-col h-full py-24 lg:px-4 " @click="$router.push(`/services/${service.id}`)">
+                    <div class="flex flex-col my-auto gap-y-4 text-justified ">
+                    
+                      <div>
+                        <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase">
+                          {{service.title}}
+                        </h1>
+                      </div>
+                      <div>
+                        <p class="px-4 pt-4 text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
+                          {{service.description}}
+                        </p>
+                      </div>
+                      <!-- <img class="w-full mx-auto transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100" :src="service.thumbnail_path"  style="width:full; height: 300px;" alt=""> -->
+                    </div>
+                  </div>
+                </slide>
+  
+                  
+           
+           
+              </carousel>
+                 </div>
+               
+                 
+               </client-only>
+<!-- 
+                <client-only>
                  <div class="w-full mx-auto ">
               <carousel class="" :navigation-enabled="true" scroll-per-page="false" :per-page-custom="[[350, 1], [768, 2], [1024, 4]]" pagination-enabled="true" center-mode="true" autoplay="true"  autoplay-hover-pause="true" pagination-size="10" loop="true">
                 <slide v-for="dat in data" :key="dat.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-gray-300">
@@ -28,8 +63,7 @@
                  </div>
                
                  
-               </client-only>
-             
+               </client-only> -->
              
        </div>
   </div>
@@ -39,14 +73,15 @@
 export default {
   data() {
     return {
+      test: [],
       data: [
         {
           name: 'ORS Solution',
           cont: 'The first online sales solution in the world helps the real estate industry',
         },
         {
-          name: 'Modern Egypt ',
-          cont: 'The market place of real estate projects helps you to Reach your potential customers from anywhere at any time',
+          name: 'Modern Egypt',
+          cont: 'The first online sales solution in the world helps the real estate industry',
         },
         {
           name: 'Virtual Exhibition',
@@ -62,7 +97,7 @@ export default {
         },
         {
           name: '360Virtual Tours',
-          cont: 'Transform your property into a fully 3D viewing',
+          cont: 'The first online sales solution in the world helps the real estate industry',
         },
         {
           name: '360 Video Animations Production',
@@ -87,11 +122,32 @@ export default {
       ],
     }
   },
+  computed: {
+    services() {
+      return this.$store.getters.Services
+    },
+  },
+  mounted() {
+    this.$store.dispatch('getServices')
+  },
 }
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.video-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
 .test {
   height: 30vh;
   width: 15vw;

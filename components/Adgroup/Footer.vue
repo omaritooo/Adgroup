@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img width="1920" src="/rect.svg" alt="" />
+    <img src="https://i.imgur.com/Ew3aI1l.png" alt="" />
     <div
       class="flex flex-col justify-around px-4 pt-20 text-justify bg-black  sm:px-6 2xl:px-20 md:flex-row lg:justify-evenly"
     >
@@ -19,7 +19,7 @@
             <font-awesome-icon
               :icon="['fas', 'envelope']"
               class="my-auto mr-8"
-            /><span>INFO@ADGROUP.TECH</span>
+            /><span>INFO@ADGROUPTECH.COM</span>
           </a>
           <a class="flex">
             <font-awesome-icon
@@ -55,9 +55,9 @@
             />
           </a>
         </div>
-        <div class="flex flex-col py-4">
-          <span>© 2021 <span class="font-bold">AD Group</span></span>
-          <span>(Ad Group Co.) All Rights Reserved.</span>
+        <div class="flex flex-row py-4 text-sm gap-x-3">
+          <span>© 2021 <span class="font-bold">AD Group </span></span>
+          (Ad Group Co.) All Rights Reserved.
         </div>
       </div>
       <div class="mb-4 md:mb-0">
@@ -85,7 +85,7 @@
           <input
             type="text"
             name=""
-            placeholder="Name"
+            placeholder="Subject"
             class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-gold bg-opacity-10"
           />
           <textarea

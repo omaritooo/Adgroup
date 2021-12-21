@@ -7,7 +7,7 @@
         <div
           class="relative flex justify-between w-full px-4  lg:w-auto lg:static lg:block lg:justify-start"
         >
-          <a class="inline-block mr-4 font-bold text-white uppercase">
+          <!-- <a class="inline-block mr-4 font-bold text-white uppercase">
             <nuxt-link to="/">
               <img
                 class="w-20 h-20 my-auto md:w-32 md:h-20"
@@ -15,9 +15,9 @@
                 alt=""
               />
             </nuxt-link>
-          </a>
-          <button
-            class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer  lg:hidden focus:outline-none"
+          </a> -->
+          <!-- <button
+            class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
             type="button"
           >
             <button
@@ -26,7 +26,7 @@
             >
               <span class="sr-only">Open main menu</span>
               <div
-                class="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2  left-1/2 top-1/2"
+                class="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
               >
                 <span
                   aria-hidden="true"
@@ -81,7 +81,7 @@
                 ></span>
               </div>
             </button>
-          </button>
+          </button> -->
         </div>
         <div
           :class="{ hidden: !showMenu, flex: showMenu }"
@@ -99,7 +99,7 @@
               class="flex flex-col justify-end mr-auto list-none  md:gap-y-4 md:gap-x-7 lg:flex-row"
             >
               <li class="nav-item">
-                <nuxt-link to="" href="#"
+                <nuxt-link to="/" href="#"
                   ><button
                     ref="home"
                     class="w-full mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"

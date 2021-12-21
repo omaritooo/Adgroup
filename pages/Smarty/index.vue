@@ -36,6 +36,7 @@ export default {
     Footer,
     Info,
   },
+  scrollToTop: true,
   head() {
     return {
       title: 'Smarty',

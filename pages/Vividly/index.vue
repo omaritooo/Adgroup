@@ -134,6 +134,7 @@ export default {
     Portfolio,
     Header,
   },
+  scrollToTop: true,
   data() {
     return {
       logo: '/vivlogo.svg',
@@ -142,6 +143,7 @@ export default {
       about: '#vivabout',
     }
   },
+
   head() {
     return {
       title: 'Vividly',

@@ -15,13 +15,16 @@
         <nuxt-link to="/" class="rule-cont group">
           <div class="gradient"></div>
           <div class="rule1"></div>
-          <div class="text-4xl text-white text group-hover:hidden">Vividly</div>
+          <div class="text-4xl text-white textsoon group-hover:hidden">
+            <div>Vividly</div>
+            <div class="text-blue-500 opacity-25">Coming Soon</div>
+          </div>
         </nuxt-link>
         <nuxt-link to="/Vreal" class="rule-cont group">
           <div class="group">
             <div class="transition-opacity duration-150 opacity-100">
               <img class="w-48 h-20 lblack" src="/ad-logo.svg" alt="" />
-              <img class="w-32 h-32 lcol" src="/logo_black.png" alt="" />
+              <img class="w-48 h-20 lcol" src="/logo_black.svg" alt="" />
             </div>
             <div class="gradient"></div>
             <div class="rule2"></div>
@@ -32,9 +35,10 @@
           <div class="gradient"></div>
           <div class="rule3"></div>
           <div
-            class="mx-auto text-4xl text-center text-white shadow-lg text group-hover:hidden"
+            class="mx-auto text-4xl text-center text-white shadow-lg  textsoon group-hover:hidden"
           >
-            Smarty
+            <div>Smarty</div>
+            <div class="text-blue-500 opacity-25">Coming Soon</div>
           </div>
         </nuxt-link>
       </div>
@@ -139,6 +143,15 @@ export default {}
   position: absolute;
   top: 50%;
   left: 42%;
+
+  text-align: center;
+  z-index: 200;
+  text-shadow: 2px 2px 4px #000000;
+}
+.textsoon {
+  position: absolute;
+  top: 50%;
+  left: 32%;
 
   text-align: center;
   z-index: 200;

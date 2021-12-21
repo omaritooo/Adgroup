@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col bg-white rounded-t-lg shadow-lg"
+    class="flex flex-col transition-all duration-200 scale-100 bg-white rounded-t-lg shadow-lg  hover:-translate-y-2 hover:shadow-2xl hover:scale-105"
     @click="$router.push(`/showcase/${dum.id}`)"
   >
     <img

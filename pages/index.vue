@@ -23,6 +23,7 @@ export default {
     Footer,
     Navbar,
   },
+  scrollToTop: true,
 }
 </script>
 <style>

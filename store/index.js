@@ -6,24 +6,26 @@ export const state = () => ({
 
     port: [],
     cities: [],
-    porto: []
+    porto: [],
+    services: []
 
 })
 
 export const actions = {
-    getDummy({ commit }) {
-        axios.get('https://api.modernegy.tech/api/v1/companies/2').then(res => {
-            commit('setDummy', res.data)
-        })
-    },
-    getCity({ commit }) {
-        axios.get('https://api.modernegy.tech/api/v1/companies').then(res => {
+
+    async getCity({ commit }) {
+        await axios.get('https://api.modernegy.tech/api/v1/companies').then(res => {
             commit('setCity', res.data.data)
         })
     },
-    getPorts({ commit }) {
-        axios.get('https://api.modernegy.tech/api/v1/folios').then(res => {
+    async getPorts({ commit }) {
+        await axios.get('https://api.modernegy.tech/api/v1/folios').then(res => {
             commit('setPort', res.data.data)
+        })
+    },
+    async getServices({ commit }) {
+        await axios.get('https://api.modernegy.tech/api/v1/services').then(res => {
+            commit('setServices', res.data.data)
         })
     }
 }
@@ -37,6 +39,9 @@ export const mutations = {
     },
     setPort(state, porto) {
         state.porto = porto;
+    },
+    setServices(state, services) {
+        state.services = services;
     }
 }
 
@@ -49,5 +54,8 @@ export const getters = {
     },
     Ports(state) {
         return state.porto;
+    },
+    Services(state) {
+        return state.services
     }
 }

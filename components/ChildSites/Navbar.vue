@@ -7,13 +7,16 @@
         <div
           class="relative flex justify-between w-full px-4  lg:w-auto lg:static lg:block lg:justify-around"
         >
-          <a class="inline-block mr-4 font-bold text-white uppercase">
+          <nuxt-link
+            :to="logo.route"
+            class="inline-block mr-4 font-bold text-white uppercase"
+          >
             <img
               class="w-20 h-20 my-auto md:w-32 md:h-10"
-              :src="imgsrc"
+              :src="logo.img"
               alt=""
             />
-          </a>
+          </nuxt-link>
           <button
             class="block px-3 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer  lg:hidden focus:outline-none"
             type="button"
@@ -97,16 +100,6 @@
               class="flex flex-col justify-end mr-auto list-none  lg:mr-auto md:gap-y-4 md:gap-x-7 lg:flex-row"
             >
               <li class="nav-item">
-                <nuxt-link to="" href="#"
-                  ><button
-                    ref="home"
-                    class="w-full mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
-                  >
-                    Home
-                  </button></nuxt-link
-                >
-              </li>
-              <li class="nav-item">
                 <nuxt-link :to="about" href="#"
                   ><button
                     class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
@@ -160,9 +153,20 @@
 <script>
 export default {
   props: {
-    imgsrc: String,
-    about: String,
-    contact: String,
+    logo: {
+      type: Object,
+      default() {
+        return { img: '/ad-logo.svg', route: '/' }
+      },
+    },
+    about: {
+      type: String,
+      default: '#about',
+    },
+    contact: {
+      type: String,
+      default: '#contact',
+    },
   },
   data() {
     return {
@@ -171,7 +175,7 @@ export default {
   },
   mounted() {
     // eslint-disable-next-line dot-notation
-    this.$refs['home'].focus()
+    // this.$refs['home'].focus()
   },
   method: {
     meth() {},
