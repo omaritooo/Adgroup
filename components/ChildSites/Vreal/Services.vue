@@ -14,7 +14,7 @@
                    <video class="brightness-25" autoplay muted loop width="1920px">
         <source src="https://modernegy.tech/light_bg.webm" type="video/mp4" />
     </video>
-              <carousel class="w-full clip-text-video__text" :navigation-enabled="false" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" :scroll-per-page="true" :navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,3]]" :pagination-enabled="false" :center-mode="true" :autoplay="true" :autoplay-timeout="3000"   :autoplay-hover-pause="true" :loop="true">
+              <carousel class="w-full clip-text-video__text" :navigation-enabled="false" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" :scroll-per-page="true" :navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,3]]" :pagination-enabled="false" :center-mode="true" :autoplay="false" :autoplay-timeout="3000"   :autoplay-hover-pause="true" :loop="true">
                
                 <slide  v-for="(service,index) in services" :key="service.index"  >
                   <div v-if="(index + 1) % 2 == 0" class="h-screen align-middle ease-in-out bg-[#070707] group ">

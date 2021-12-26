@@ -2,34 +2,18 @@
   <div class="flex flex-col bg-site-vblue">
     <Nav :logo="log" />
     <div
-      class="
-        relative
-        flex
-        items-center
-        min-h-screen
-        p-5
-        overflow-hidden
-        min-w-screen
-        lg:p-10
-      "
+      class="relative flex items-center min-h-screen p-5 overflow-hidden  min-w-screen lg:p-10"
     >
       <div
-        class="
-          relative
-          w-full
-          p-10
-          mx-auto
-          text-gray-800
-          bg-white
-          rounded
-          shadow-xl
-          max-w-7xl
-          lg:p-20
-          md:text-left
-        "
+        class="relative w-full p-10 mx-auto text-gray-800 bg-white rounded shadow-xl  max-w-7xl lg:p-20 md:text-left"
       >
-        <div class="items-center -mx-10 md:flex">
+        <div class="flex-col items-center -mx-10 md:flex">
           <div class="w-full px-10 mb-10 md:w-1/2 md:mb-0">
+            <iframe
+              class="relative z-10 w-full -translate-x-4 -translate-y-4 bg-opacity-50 rounded-md "
+              :src="test.video_url"
+              frameborder="0"
+            ></iframe>
             <div
               class="
                 relative
@@ -45,18 +29,6 @@
                 class="relative z-10 w-full"
                 alt=""
               /> -->
-              <iframe
-                class="
-                  relative
-                  z-10
-                  w-full
-                  -translate-x-4 -translate-y-4
-                  bg-opacity-50
-                  rounded-md
-                "
-                :src="test.video_url"
-                frameborder="0"
-              ></iframe>
               <!-- <div
                 class="absolute z-0 border-4 border-site-vblue top-10 bottom-10 left-10 right-10"
               ></div> -->
@@ -74,17 +46,7 @@
             <div>
               <div class="inline-block align-bottom">
                 <button
-                  class="
-                    px-2
-                    py-2
-                    text-white
-                    transition-colors
-                    duration-100
-                    rounded-md
-                    opacity-75
-                    bg-site-vblue
-                    hover:opacity-100 hover:text-gray-200
-                  "
+                  class="px-2 py-2 text-white transition-colors duration-100 rounded-md opacity-75  bg-site-vblue hover:opacity-100 hover:text-gray-200"
                   @click="modalshow"
                 >
                   Request A Demo
@@ -127,14 +89,7 @@
             </carousel>
           </client-only> -->
           <div
-            class="
-              container
-              w-1/2
-              mx-auto
-              space-y-2
-              h-1/2
-              lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3
-            "
+            class="container w-1/2 mx-auto space-y-2  h-1/2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3"
           >
             <div class="w-full rounded">
               <img class="" :src="test.thumbnail_path" alt="" />
@@ -330,16 +285,7 @@
           type="text"
           name=""
           placeholder="Name"
-          class="
-            w-full
-            p-4
-            placeholder-current
-            bg-black
-            border
-            rounded-t-lg
-            border-opacity-20 border-site-gold
-            bg-opacity-10
-          "
+          class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-gold bg-opacity-10"
         />
         <div class="flex gap-x-3">
           <input
@@ -347,32 +293,14 @@
             type="text"
             name=""
             placeholder="Phone"
-            class="
-              w-full
-              p-4
-              placeholder-current
-              bg-black
-              border
-              rounded-t-lg
-              border-opacity-20 border-site-gold
-              bg-opacity-10
-            "
+            class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-gold bg-opacity-10"
           />
           <input
             v-model="form.email"
             type="text"
             name=""
             placeholder="Email"
-            class="
-              w-full
-              p-4
-              placeholder-current
-              bg-black
-              border
-              rounded-t-lg
-              border-opacity-20 border-site-gold
-              bg-opacity-10
-            "
+            class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-gold bg-opacity-10"
           />
         </div>
         <input
@@ -380,59 +308,22 @@
           type="text"
           name=""
           placeholder="Company Name"
-          class="
-            w-full
-            p-4
-            placeholder-current
-            bg-black
-            border
-            rounded-t-lg
-            border-opacity-20 border-site-gold
-            bg-opacity-10
-          "
+          class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-gold bg-opacity-10"
         />
         <input
           v-model="form.date"
           type="datetime-local"
           name=""
           placeholder="Date"
-          class="
-            w-full
-            p-4
-            placeholder-current
-            bg-black
-            border
-            rounded-t-lg
-            border-opacity-20 border-site-gold
-            bg-opacity-10
-          "
+          class="w-full p-4 placeholder-current bg-black border rounded-t-lg  border-opacity-20 border-site-gold bg-opacity-10"
         />
         <textarea
           v-model="form.message"
           rows="6"
-          class="
-            w-full
-            p-4
-            placeholder-current
-            bg-black
-            border
-            rounded-t-lg
-            h-1/2
-            border-opacity-20 border-site-gold
-            bg-opacity-10
-          "
+          class="w-full p-4 placeholder-current bg-black border rounded-t-lg  h-1/2 border-opacity-20 border-site-gold bg-opacity-10"
         ></textarea>
         <button
-          class="
-            w-full
-            p-2
-            text-white
-            placeholder-current
-            border
-            rounded-b-lg
-            bg-site-gold
-            border-opacity-20
-          "
+          class="w-full p-2 text-white placeholder-current border rounded-b-lg  bg-site-gold border-opacity-20"
           @click.prevent="postman"
         >
           <font-awesome-icon
@@ -566,7 +457,7 @@ export default {
 @media screen and (min-width: 1366px) {
   iframe {
     height: 30vh;
-    width: 20vw;
+    width: 100%;
   }
 }
 </style>
