@@ -1,30 +1,51 @@
 <template>
-  <div class="relative px-10 bg-black text-site-vblue video-container ">
-      <h1 class="absolute top-0 left-0 z-50 p-10 text-6xl font-bold text-center">
-        Services
-      
-      </h1>
-     <video autoplay muted loop>
-        <source src="/Videoc38.mp4" type="video/mp4" />
-    </video>
+  <div class="relative bg-black text-site-vblue video-container ">
+    <div>
+
+    </div>
+        <h1 class="absolute top-0 z-50 w-full py-10 mx-auto text-6xl font-bold text-center left-2/5">
+          Services
+        
+        </h1>
+     
+     
        <client-only>
                  <div class="w-full mx-auto ">
-              <carousel class="" navigation-enabled="true" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" scroll-per-page="false" navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,4]]" pagination-enabled="true" center-mode="true" autoplay="true"  autoplay-hover-pause="true" pagination-size="10" loop="true">
-                <slide  v-for="service in services" :key="service.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-white hover:bg-opacity-10" >
-                  <div class="flex flex-col h-full py-24 lg:px-4 " @click="$router.push(`/services/${service.id}`)">
-                    <div class="flex flex-col my-auto gap-y-4 text-justified ">
+                   <video class="brightness-25" autoplay muted loop width="1920px">
+        <source src="https://modernegy.tech/light_bg.webm" type="video/mp4" />
+    </video>
+              <carousel class="w-full clip-text-video__text" :navigation-enabled="false" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" :scroll-per-page="true" :navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,3]]" :pagination-enabled="false" :center-mode="true" :autoplay="true" :autoplay-timeout="3000"   :autoplay-hover-pause="true" :loop="true">
+               
+                <slide  v-for="(service,index) in services" :key="service.index"  >
+                  <div v-if="(index + 1) % 2 == 0" class="h-screen align-middle ease-in-out bg-[#070707] group ">
+                    <div class="flex flex-col h-full py-24 " >
+                      <div class="flex flex-col my-auto gap-y-4 text-justified ">
                     
-                      <div>
-                        <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase">
-                          {{service.title}}
-                        </h1>
+                        <div class="cursor-pointer " @click="$router.push(`/services/${service.id}`)">
+                          <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase lg:text-7xl" >
+                            {{service.title}}
+                          </h1>
+                        </div>
+                        
                       </div>
-                      <div>
-                        <p class="px-4 pt-4 text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
-                          {{service.description}}
-                        </p>
+                    </div>
+                  </div>
+                  <div v-else class="h-screen align-middle transition-colors duration-150 ease-in-out bg-black group ">
+                    <div class="flex flex-col h-full py-24 lg:px-4 ">
+                      <div class="flex flex-col my-auto gap-y-4 text-justified ">
+                    
+                        <div class="cursor-pointer" @click="$router.push(`/services/${service.id}`)">
+                          <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase lg:text-7xl ">
+                        {{service.title}}
+                          </h1>
+                        </div>
+                        <!-- <div>
+                          <p class="px-4 pt-4 text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
+                            {{service.description}}
+                          </p>
+                        </div> -->
+                        <!-- <img class="w-full mx-auto transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100" :src="service.thumbnail_path"  style="width:full; height: 300px;" alt=""> -->
                       </div>
-                      <!-- <img class="w-full mx-auto transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100" :src="service.thumbnail_path"  style="width:full; height: 300px;" alt=""> -->
                     </div>
                   </div>
                 </slide>
@@ -37,33 +58,7 @@
                
                  
                </client-only>
-<!-- 
-                <client-only>
-                 <div class="w-full mx-auto ">
-              <carousel class="" :navigation-enabled="true" scroll-per-page="false" :per-page-custom="[[350, 1], [768, 2], [1024, 4]]" pagination-enabled="true" center-mode="true" autoplay="true"  autoplay-hover-pause="true" pagination-size="10" loop="true">
-                <slide v-for="dat in data" :key="dat.index" class="h-screen align-middle transition-colors duration-150 ease-in-out group hover:bg-gray-300">
-                  <div class="flex flex-col h-full py-24 lg:px-4 ">
-                    <div class="flex flex-col px-4 my-auto gap-y-4 ">
-                      <span class="numbers text-7xl">
-                      </span>
-                      <h1 class="text-4xl font-bold uppercase">
-                        {{dat.name}}
-                      </h1>
-                      <p class="text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
-                        {{dat.cont}}
-                      </p>
-                    </div>
-                  </div>
-                </slide>
-  
-                  
-           
-           
-              </carousel>
-                 </div>
-               
-                 
-               </client-only> -->
+
              
        </div>
   </div>
@@ -74,52 +69,6 @@ export default {
   data() {
     return {
       test: [],
-      data: [
-        {
-          name: 'ORS Solution',
-          cont: 'The first online sales solution in the world helps the real estate industry',
-        },
-        {
-          name: 'Modern Egypt',
-          cont: 'The first online sales solution in the world helps the real estate industry',
-        },
-        {
-          name: 'Virtual Exhibition',
-          cont: 'Find your global qualified leads and engage with thousands of business prospects virtually.',
-        },
-        {
-          name: 'AR for real estate',
-          cont: 'Augmented Reality helps real estate companies to market their finished and unfinished project',
-        },
-        {
-          name: 'VR for real estate',
-          cont: 'Virtual reality allows your customers take a tour in your projects by using VR headset.',
-        },
-        {
-          name: '360Virtual Tours',
-          cont: 'The first online sales solution in the world helps the real estate industry',
-        },
-        {
-          name: '360 Video Animations Production',
-          cont: '3D Animation video attract many leads for real estate companies who work with unfinished project',
-        },
-        {
-          name: 'Interactive model',
-          cont: 'It is an ideal solution for presenting your project in exhibitions',
-        },
-        {
-          name: 'Model in a bag',
-          cont: 'unique solution carries your architectural module designs in bag to attend international exhibitions',
-        },
-        {
-          name: 'I walk',
-          cont: 'It is a powerful solution for presenting your projects in an interactive and entertaining way',
-        },
-        {
-          name: 'Interactive touch screen',
-          cont: 'powerful marketing and sales tool to present your projects and engage with your potential customer',
-        },
-      ],
     }
   },
   computed: {
@@ -135,18 +84,45 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.clip {
+  /*
+  Ensure background is added first
+  */
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* what will show through the text
+      ~ or ~
+     what will be the background of that element */
+  background: url(https://24.media.tumblr.com/tumblr_m87dri70zh1qzla33o1_500.gif);
+}
+.clip-text-video__text {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+
 .video-container {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-.video-container video {
+video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  position: absolute;
   object-fit: cover;
-  z-index: 0;
+  overflow: hidden;
 }
 .test {
   height: 30vh;

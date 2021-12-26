@@ -4,7 +4,9 @@
     <div class="flex flex-col px-20 py-20 mx-auto gap-y-5 bckg">
       <div class="flex justify-center gap-x-4">
         <div class="flex justify-between gap-x-4">
-          <label class="my-auto text-sm" for=""> Select Platform:</label>
+          <label class="my-auto text-sm text-white" for="">
+            Select Platform:</label
+          >
           <select v-model="selected" class="max-w-xs select focus:outline-none">
             <option v-for="d in drop" :key="d.index" :value="d">
               {{ d.name }}

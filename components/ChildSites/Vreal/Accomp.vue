@@ -1,5 +1,5 @@
 <template>
-  <div id="aboutVR" class="flex ox-8 lg:px-20 bg-site-vblue">
+  <div id="aboutVR" class="flex text-white ox-8 lg:px-20 bg-site-vblue">
     <div class="flex flex-col justify-center p-4 lg:p-20 gap-y-4">
       <div class="flex flex-col mx-auto gap-y-3">
         <h1 class="mx-auto text-4xl font-bold text-center">Why VReal?</h1>

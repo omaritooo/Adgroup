@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="https://i.imgur.com/Ew3aI1l.png" alt="" />
+    <!-- <img src="https://i.imgur.com/Ew3aI1l.png" alt="" /> -->
     <div
       class="flex flex-col justify-around px-4 pt-20 text-justify bg-black  sm:px-6 2xl:px-20 md:flex-row lg:justify-evenly"
     >

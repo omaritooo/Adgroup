@@ -117,26 +117,17 @@
                   </button></nuxt-link
                 >
               </li>
-              <li class="block nav-item lg:hidden">
-                <nuxt-link to="/request-a-demo" href="#"
-                  ><button
-                    class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
-                  >
-                    Request Demo
-                  </button></nuxt-link
-                >
-              </li>
             </ul>
           </transition>
         </div>
         <div class="hidden lg:flex">
-          <nuxt-link to="/request-a-demo" href="#"
+          <!-- <nuxt-link to="/request-a-demo" href="#"
             ><button
-              class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase  md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
+              class="w-full px-2 mt-2 ml-auto text-gray-300 uppercase md:py-1 md:px-2 active text-md hover:text-white hover-underline-animation"
             >
               Request Demo
             </button></nuxt-link
-          >
+          > -->
           <nuxt-link to="/">
             <img
               class="hidden my-auto md:w-32 md:h-10 lg:block"

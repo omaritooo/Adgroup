@@ -2,16 +2,6 @@
   <div class="overflow-x-hidden">
     <div class="hidden lg:block">
       <div class="hidden ruler lg:block">
-        <!-- <div
-          class="w-32 h-32 transition-opacity duration-150 opacity-100 logo group-hover:opacity-0"
-        >
-          <img class="" src="/logo_black.png" alt="" />
-        </div>
-        <div
-          class="w-48 h-48 transition-opacity duration-150 opacity-0 logo group-hover:opacity-100"
-        >
-          <img class="" src="/ad-logo.svg" alt="" />
-        </div> -->
         <nuxt-link to="/" class="rule-cont group">
           <div class="gradient"></div>
           <div class="rule1"></div>
@@ -24,7 +14,7 @@
           <div class="group">
             <div class="transition-opacity duration-150 opacity-100">
               <img class="w-48 h-20 lblack" src="/ad-logo.svg" alt="" />
-              <img class="w-48 h-20 lcol" src="/logo_black.svg" alt="" />
+              <img class="w-48 h-20 lcol" src="/adblack.svg" alt="" />
             </div>
             <div class="gradient"></div>
             <div class="rule2"></div>

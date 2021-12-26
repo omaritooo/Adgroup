@@ -7,7 +7,9 @@ export const state = () => ({
     port: [],
     cities: [],
     porto: [],
-    services: []
+    services: [],
+    modal: false
+
 
 })
 
@@ -42,6 +44,10 @@ export const mutations = {
     },
     setServices(state, services) {
         state.services = services;
+    },
+    modelo(state) {
+        state.modal = !state.modal;
+        console.log(state.modal)
     }
 }
 
@@ -57,5 +63,8 @@ export const getters = {
     },
     Services(state) {
         return state.services
+    },
+    getModal(state) {
+        return state.modal;
     }
 }
