@@ -8,7 +8,8 @@ export const state = () => ({
     cities: [],
     porto: [],
     services: [],
-    modal: false
+    modal: false,
+    popup: false
 
 
 })
@@ -47,7 +48,9 @@ export const mutations = {
     },
     modelo(state) {
         state.modal = !state.modal;
-        console.log(state.modal)
+    },
+    pop(state) {
+        state.popup = !state.popup;
     }
 }
 
@@ -66,5 +69,9 @@ export const getters = {
     },
     getModal(state) {
         return state.modal;
+    },
+    getPop(state) {
+        return state.popup
     }
+
 }

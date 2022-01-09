@@ -81,6 +81,7 @@ export default {
         "faPinterest",
         "faTelegramPlane",
         "faLinkedin",
+        "faYoutube"
 
       ],
       solid: ['faArrowRight', 'faTimes', 'faExpandArrowsAlt', 'faCompress', 'faLink', 'faQuoteLeft', 'faPhoneAlt', 'faMapMarkerAlt', 'faEnvelope']

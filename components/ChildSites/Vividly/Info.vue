@@ -1,6 +1,15 @@
 <template>
   <div
-    class="flex flex-col justify-center py-12  lg:flex-row gap-x-3 imgur lg:px-72"
+    class="
+      flex flex-col
+      justify-center
+      py-12
+      bg-[#15181c]
+      lg:flex-row
+      gap-x-3
+      imgur
+      lg:px-72
+    "
   >
     <div
       class="flex flex-col order-last py-12 mx-auto my-auto  lg:mx-0 lg:order-first lg:w-3/5 lg:px-8 gap-y-10"

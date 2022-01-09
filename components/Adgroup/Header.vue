@@ -62,8 +62,8 @@ export default {}
 .arrow {
   position: absolute;
   top: 80%;
-  left: 47%;
-  width: 30%;
+  left: 48%;
+  width: 5%;
   z-index: 3000;
 }
 @media screen and (max-width: 480px) {
@@ -87,7 +87,7 @@ export default {}
     position: absolute;
     top: 70%;
     left: 41%;
-    width: 20%;
+    width: 10%;
   }
 }
 .logo {
@@ -150,7 +150,7 @@ export default {}
 .rule-cont:hover .gradient {
   position: absolute;
   top: 0;
-  opacity: 0.31;
+  opacity: 0.11;
   transform: scaleY(1);
 
   left: 0;
@@ -176,7 +176,7 @@ export default {}
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  background: url('https://i.imgur.com/3ABOZR1.png');
+  background: url('https://i.imgur.com/DpAg7Jl.jpg');
 }
 
 .rule-cont:hover .rule1 {
@@ -250,7 +250,7 @@ export default {}
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  background: url('https://i.imgur.com/HlGUV4X.png');
+  background: url('https://i.imgur.com/p2yIKP8.jpg');
 }
 
 .rule-cont:hover .rule2 {
@@ -285,7 +285,7 @@ export default {}
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  background: url('https://i.imgur.com/fizXvKo.png');
+  background: url('https://i.imgur.com/qzr4Z9z.jpg');
 }
 
 .rule-cont:hover .rule3 {

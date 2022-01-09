@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col bg-white">
+  <div class="flex flex-col bg-transparent">
     <div class="z-50 py-20 md:px-32">
-      <h1 class="text-center text-red-800 md:p-4 md:text-5xl">Portfolio</h1>
+      <h1 class="text-center text-white md:p-4 md:text-5xl">Portfolio</h1>
 
       <div v-if="!toggle">
         <div
-          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
         >
           <div
             v-for="(d, index) in data"
@@ -20,7 +20,7 @@
       </div>
       <div v-if="toggle">
         <div
-          class="flex flex-wrap justify-around mx-auto mt-6 md:w-full lg:w-3/4 gap-y-3"
+          class="flex flex-wrap justify-around mx-auto mt-6  md:w-full lg:w-3/4 gap-y-3"
         >
           <div
             v-for="d in data"
@@ -35,7 +35,7 @@
       </div>
       <div class="mt-10 text-center">
         <button
-          class="px-4 bg-transparent border-2 rounded-lg text-site-vblue border-site-vblue"
+          class="px-4 text-white bg-transparent border-2 border-white rounded-lg "
           @click="toggle = !toggle"
         >
           Show More

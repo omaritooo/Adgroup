@@ -1,63 +1,72 @@
 <template>
   <div class="relative bg-black text-site-vblue video-container ">
-    <div>
 
-    </div>
-        <h1 class="absolute top-0 z-50 w-full py-10 mx-auto text-6xl font-bold text-center left-2/5">
+
+        <h1 class="absolute top-0 z-50 w-full py-10 text-6xl font-bold left-10 text-[#5B77AC]">
           Services
         
         </h1>
+   
      
      
-       <client-only>
                  <div class="w-full mx-auto ">
-                   <video class="brightness-25" autoplay muted loop width="1920px">
+                   <video class="" autoplay muted loop width="1920px">
         <source src="https://modernegy.tech/light_bg.webm" type="video/mp4" />
     </video>
-              <carousel class="w-full clip-text-video__text" :navigation-enabled="false" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" :scroll-per-page="true" :navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,3]]" :pagination-enabled="false" :center-mode="true" :autoplay="false" :autoplay-timeout="3000"   :autoplay-hover-pause="true" :loop="true">
-               
-                <slide  v-for="(service,index) in services" :key="service.index"  >
-                  <div v-if="(index + 1) % 2 == 0" class="h-screen align-middle ease-in-out bg-[#070707] group ">
-                    <div class="flex flex-col h-full py-24 " >
-                      <div class="flex flex-col my-auto gap-y-4 text-justified ">
-                    
-                        <div class="cursor-pointer " @click="$router.push(`/services/${service.id}`)">
-                          <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase lg:text-7xl" >
-                            {{service.title}}
-                          </h1>
+
+    <div class="absolute z-50 px-24 py-2 bg-gradient-to-r from-[#FB2E2E] to-[#9B38F7] bottom-8 right-10">
+
+   </div>
+    <div class="absolute z-50 px-8 py-2 bg-gradient-to-r from-[#FB2E2E] to-[#9B38F7] top-8 right-10">
+
+   </div>
+    <div class="absolute z-50 px-8 py-2 bg-gradient-to-r from-[#FB2E2E] to-[#9B38F7] bottom-8 left-10">
+
+   </div>
+
+    </div>
+              <client-only>
+                <carousel class="w-full clip-text-video__text" :navigation-enabled="false" navigation-next-label="<span class='text-white'>▶</span>" navigation-prev-label="<span class='text-white rotate-90'>◀</span>" :scroll-per-page="true" :navigation-click-target-size="15" pagination-active-color="#000000" pagination-color="#547DBF" :per-page-custom="[[350, 1], [768, 2], [1024,3]]" :pagination-enabled="false" :center-mode="true" :autoplay="true" :autoplay-timeout="6000"   :autoplay-hover-pause="true" :loop="true">
+                
+                  <slide  v-for="(service,index) in services" :key="service.index"  >
+                    <div v-if="(index + 1) % 2 == 0" class="h-screen align-middle ease-in-out bg-[#000000f6] group ">
+                      <div class="flex flex-col h-full py-24 " >
+                        <div class="flex flex-col my-auto gap-y-4 text-justified ">
+                
+                          <div class="cursor-pointer " @click="$router.push(`/services/${service.id}`)">
+                            <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase lg:text-8xl" >
+                              {{service.title}}
+                            </h1>
+                          </div>
+                
                         </div>
-                        
                       </div>
                     </div>
-                  </div>
-                  <div v-else class="h-screen align-middle transition-colors duration-150 ease-in-out bg-black group ">
-                    <div class="flex flex-col h-full py-24 lg:px-4 ">
-                      <div class="flex flex-col my-auto gap-y-4 text-justified ">
-                    
-                        <div class="cursor-pointer" @click="$router.push(`/services/${service.id}`)">
-                          <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase lg:text-7xl ">
-                        {{service.title}}
-                          </h1>
+                    <div v-else class="h-screen align-middle transition-colors duration-150 ease-in-out bg-black group ">
+                      <div class="flex flex-col h-full py-24 lg:px-4 ">
+                        <div class="flex flex-col my-auto gap-y-4 text-justified ">
+                
+                          <div class="cursor-pointer" @click="$router.push(`/services/${service.id}`)">
+                            <h1 class="px-4 mb-10 text-4xl font-bold text-center uppercase lg:text-8xl ">
+                          {{service.title}}
+                            </h1>
+                          </div>
+                          <!-- <div>
+                            <p class="px-4 pt-4 text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
+                              {{service.description}}
+                            </p>
+                          </div> -->
+                          <!-- <img class="w-full mx-auto transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100" :src="service.thumbnail_path"  style="width:full; height: 300px;" alt=""> -->
                         </div>
-                        <!-- <div>
-                          <p class="px-4 pt-4 text-xl transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100">
-                            {{service.description}}
-                          </p>
-                        </div> -->
-                        <!-- <img class="w-full mx-auto transition-all duration-300 ease-in-out delay-100 lg:scale-y-0 lg:group-hover:scale-y-100" :src="service.thumbnail_path"  style="width:full; height: 300px;" alt=""> -->
                       </div>
                     </div>
-                  </div>
-                </slide>
-  
-                  
-           
-           
-              </carousel>
+                  </slide>
+                
+                </carousel>
+              </client-only>
                  </div>
                
                  
-               </client-only>
 
              
        </div>
